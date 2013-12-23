@@ -1,0 +1,19 @@
+<include file="public:header" />
+<style type="text/css">
+<!--
+.content{ padding:46px 12px 10px 25px; font-size:14px; height:64px; text-align:left}
+.ok,.guery{background: url(__ROOT__/statics/admin/images/ajax_loading.gif) no-repeat 0px 47px ;}
+-->
+</style>
+<meta http-equiv="refresh" content="1;url={$jump_url}" /> </present>
+<div style="text-align:center">
+    <div class="content ok" style="display:inline-block;display:-moz-inline-stack;zoom:1;*display:inline;max-width:330px;">{$message}</div>
+    <present name="dialog" >
+    <script style="text/javascript">
+	var dialog = "{$dialog}";
+	window.top.right.location.reload();window.top.art.dialog({id:dialog}).close();
+    </script>
+    </present>
+</div>
+</body>
+</html>

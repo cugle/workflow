@@ -1,0 +1,84 @@
+<tagLib name="tpl" />
+<include file="Public:header" />
+<script type="text/javascript">		
+$(function(){
+	$("#add_attatch").click(function(){
+	$("#attatch_tr").clone().prependTo($("#attatch_tr").parent());
+	});
+})
+</script>
+<form action="{:u('WFDefination/add')}" method="post" name="myform" id="myform"  enctype="multipart/form-data" style="margin-top:10px;">
+  <div class="pad-10">
+    <div class="col-tab">
+      <ul class="tabBut cu-li">
+        <li id="tab_setting_1" class="on" onclick="SwapTab('setting','on','',2,1);">{$Think.lang.general_info}</li>
+      
+      </ul>
+      <div id="div_setting_1" class="contentList pad-10">
+        <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+          <tr>
+            <th width="100">{:L('title')}:</th>
+            <td><input type="text" name="defination_name" id="defination_name" class="input-text" size="60"></td>
+          </tr>
+          <tr>
+            <th>{:L('cate_id')}:</th>
+            <td><select name="defination_cate_id" id="defination_cate_id" style="width:200px;">
+            	<option value="0">--请选择分类--</option>
+                <volist name="cate_list['parent']" id="val">
+                  <option value="{$val.defination_cate_id}">{$val.defination_cate_name}</option>
+                  <notempty name="cate_list['sub'][$val['defination_cate_id']]">
+                    <volist name="cate_list['sub'][$val['defination_cate_id']]" id="sval">
+                      <option value="{$sval.defination_cate_id}">&nbsp;&nbsp;&nbsp;&nbsp;{$sval.defination_cate_name}</option>
+                      <notempty name="cate_list['sub'][$sval['defination_cate_id']]">
+                        <volist name="cate_list['sub'][$sval['defination_cate_id']]" id="ssval">
+                          <option value="{$ssval.defination_cate_id}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$ssval.defination_cate_name}</option>
+                        </volist>
+                      </notempty>
+                    </volist>
+                  </notempty>
+                </volist>
+              </select></td>
+          </tr>
+          <tr>
+            <th>{:L('handler')} :</th>
+            <td><textarea name="defination_handler" id="defination_handler" style="width:68%;height:50px;"></textarea></td>
+          </tr>
+		  <tr>
+            <th>{:L('status')} :</th>
+            <td><input type="radio" name="status" class="radio_style" value="1">
+              &nbsp;已审核&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="status" class="radio_style" value="0" checked="checked">
+              &nbsp;待审核
+              </td>
+          </tr>
+        </table>
+      </div>
+      
+      <div class="bk15"></div>
+      <div class="btn"><input type="submit" value="{$Think.lang.submit}" onclick="return submitFrom();" name="dosubmit" class="button" id="dosubmit"></div>
+    </div>
+  </div>
+</form>
+<script type="text/javascript">
+function SwapTab(name,cls_show,cls_hide,cnt,cur){
+    for(i=1;i<=cnt;i++){
+		if(i==cur){
+			 $('#div_'+name+'_'+i).show();
+			 $('#tab_'+name+'_'+i).attr('class',cls_show);
+		}else{
+			 $('#div_'+name+'_'+i).hide();
+			 $('#tab_'+name+'_'+i).attr('class',cls_hide);
+		}
+	}
+}
+
+function submitFrom(){
+	if($("#cate_id").val()==0)
+	{
+	   alert('请选择文章分类');
+	   return false;
+	}
+
+}
+</script>
+</body></html>

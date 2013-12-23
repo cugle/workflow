@@ -1,0 +1,68 @@
+<include file="Public:header" />
+<form id="myform" name="myform" action="{:u('Setting/doMsgEdit')}" method="post">
+    <div class="pad-10">
+        <table width="720" cellspacing="0" cellpadding="0" bordercolor="#dddddd" border="1" align="center" style="border-collapse: collapse">
+            <tbody>
+            <tr>
+                <td valign="middle" height="30" align="right" class="bigtext" colspan="2"><div align="left">&nbsp;&nbsp;以下内容为系统自动发送的信息。<span class="STYLE1">(所有英文字符为变量，请不要随意修改)</span></div></td>
+            </tr>
+		    <tr>
+                <td width="157" height="30" align="right" class="bigtext"><div align="right">注册时发送的短信：</div></td>
+                <td width="557" height="30" class="bigtext">&nbsp;
+                <textarea style="width: 401px; height: 125px;" class="btn3" rows="3" name="msg_zhuce">{$arr.msg_zhuce}</textarea></td>
+             </tr>
+					  <!--tr>
+                        <td width="157" height="30" align="right" class="bigtext"><div align="right">注册赠送金额短信：</div></td>
+                        <td width="557" height="30" class="bigtext">&nbsp;
+                          <textarea style="width:400px" class="btn3" rows="3" name="msg_zhucesong">{$arr.msg_zhucesong}</textarea></td>
+                      </tr-->
+                      <tr>
+                        <td width="157" height="30" align="right" class="bigtext"><div align="right">注册赠送积分短信：</div></td>
+                        <td width="557" height="30" class="bigtext">&nbsp;
+                          <textarea style="width:400px" class="btn3" rows="3" name="msg_zsjifen">{$arr.msg_zsjifen}</textarea></td>
+                      </tr>
+                      <tr>
+                        <td width="157" height="30" align="right" class="bigtext"><div align="right">积分兑换短信：</div></td>
+                        <td width="557" height="30" class="bigtext">&nbsp;
+                          <textarea style="width:400px" class="btn3" rows="3" name="msg_dhjifen">{$arr.msg_dhjifen}</textarea></td>
+                      </tr>
+					   <tr>
+                        <td width="157" height="30" align="right" class="bigtext"><div align="right">确认订单时的短信：</div></td>
+                        <td height="30" class="bigtext">&nbsp;
+                          <textarea style="width:400px" id="tongji" class="btn3" rows="3" cols="60" name="msg_tabao">{$arr.msg_tabao}</textarea></td>
+                      </tr>
+					  <!--tr>
+                        <td width="157" height="30" align="right" class="bigtext"><div align="right">确认订单时推广人的短信：</div></td>
+                        <td height="30" class="bigtext">&nbsp;
+                          <textarea style="width:400px" id="tongji" class="btn3" rows="3" cols="60" name="msg_taobaotuiguang">{$arr.msg_taobaotuiguang}</textarea></td>
+                      </tr-->
+                      <tr>
+                        <td width="157" height="30" align="right" class="bigtext"><div align="right">提现成功时的短信：</div></td>
+                        <td height="30" class="bigtext">&nbsp;
+                          <textarea style="width:400px" id="tongji" class="btn3" rows="3" cols="60" name="msg_tixianok">{$arr.msg_tixianok}</textarea></td>
+                      </tr>
+                      <tr>
+                        <td width="157" height="30" align="right" class="bigtext"><div align="right">提现失败时的短信：</div></td>
+                        <td height="30" class="bigtext">&nbsp;
+                          <textarea style="width:400px" id="tongji" class="btn3" rows="3" cols="60" name="msg_tixianfail">{$arr.msg_tixianfail}</textarea></td>
+                      </tr>
+					  <!--tr>
+                        <td width="157" height="30" align="right" class="bigtext"><div align="right">删除交易时的短信：</div></td>
+                        <td height="30" class="bigtext">&nbsp;
+                          <textarea style="width:400px" id="tongji" class="btn3" rows="3" cols="60" name="msg_deltrade">{$arr.msg_deltrade}</textarea></td>
+                      </tr>
+					  <tr>
+                        <td width="157" height="30" align="right" class="bigtext"><div align="right">删除交易时推广人的短信：</div></td>
+                        <td height="30" class="bigtext">&nbsp;
+                          <textarea style="width:400px" id="tongji" class="btn3" rows="3" cols="60" name="msg_deltradetuiguang">{$arr.msg_deltradetuiguang}</textarea></td>
+                      </tr-->
+                    <tr>
+                        <td height="30" align="right">&nbsp;</td>
+                        <td height="30" class="bigtext">&nbsp;<input type="submit" value=" 保 存 设 置 " name="Submit">&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        <div class="bk15"></div>
+    </div>
+</body>
+</html>

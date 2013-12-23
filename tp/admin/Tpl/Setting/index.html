@@ -1,0 +1,194 @@
+<include file="Public:header" />
+<form id="myform" name="myform" action="{:u('Setting/edit')}" enctype="multipart/form-data" method="post">
+  <div class="pad-10">
+    <div class="col-tab">
+      <ul class="tabBut cu-li">
+        <li id="tab_setting_1" class="on" onclick="SwapTab('setting','on','',3,1);">{:L('site_info')}</li>	
+		<li id="tab_setting_2" onclick="SwapTab('setting','on','',3,2);">{:L('mail_info')}</li>		       
+		<li id="tab_setting_3" onclick="SwapTab('setting','on','',3,3);">{:L('site_status')}</li>		
+      </ul>      
+      <div id="div_setting_1" class="contentList pad-10">
+          <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+            <tr>
+              <th width="120">{:L('site_name')} :</th>
+              <td><input type="text" name="site[site_name]" size="80" value="{$set.site_name}"></td>
+            </tr>
+            <tr>
+              <th width="120">{:L('site_domain')} :</th>
+              <td><input type="text" name="site[site_domain]" size="80" value="{$set.site_domain}"></td>
+            </tr>    
+			<tr>
+              <th>{:L('site_title')}:</th>
+              <td><input type="text" name="site[site_title]" size="80" value="{$set.site_title}"></td>
+            </tr>
+            <tr>
+              <th>{:L('site_keyword')} :</th>
+              <td><input type="text" name="site[site_keyword]" size="80" value="{$set.site_keyword}"></td>
+            </tr>
+            <tr>
+              <th>{:L('site_description')} :</th>
+              <td><textarea rows="3" cols="80" name="site[site_description]">{$set.site_description}</textarea></td>
+            </tr> 
+			<tr>
+              <th>{:L('site_logo')} :</th>
+              <td>              	
+				<input type="file" name="img" id="img" class="input-text" size=21 />
+				<if condition="$set['site_logo'] neq ''">
+					<img src="{$set['site_logo']}" style="max-height:64px;" />
+				</if>
+			  </td>
+            </tr> 
+			<tr>
+              <th width="120">{:L('check_code')} :</th>
+              <td>
+                <input type="radio" <if condition="$set.check_code eq '1'">checked="checked"</if> onclick="" value="1" name="site[check_code]" /> 开启 &nbsp;&nbsp;
+                <input type="radio" <if condition="$set.check_code eq '0'">checked="checked"</if> onclick="" value="0" name="site[check_code]" /> 关闭 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				
+              </td>
+            </tr>
+            <tr>
+              <th width="120">文章显示条数 :</th>
+              <td>
+                <input type="text" name="site[article_count]" value="{$set.article_count}"/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+              </td>
+            </tr>
+            <tr>
+              <th>{:L('comment_time')} :</th>
+              <td><input type="text" name="site[comment_time]" id="comment_time" class="input-text" value="{$set.comment_time}"><span>0表示不限制,单位/秒</span></td>
+            </tr>	
+            <tr>
+              <th>{:L('site_icp')} :</th>
+              <td><input type="text" name="site[site_icp]" id="site_icp" class="input-text" value="{$set.site_icp}"></td>
+            </tr>
+            <tr>
+              	<th>{:L('statistics_code')} :</th>
+              	<td>
+                    <textarea rows="3" cols="80" name="site[statistics_code]" id="statistics_code">{$set.statistics_code}</textarea>
+            	</td>
+        	</tr>
+			<tr>
+              	<th>{:L('site_share')} :</th>
+              	<td>
+                    <textarea rows="3" cols="80" name="site[site_share]" id="site_share">{$set.site_share}</textarea>
+            	</td>
+        	</tr>			
+        </table>
+      </div>	
+      <div id="div_setting_2" class="contentList pad-10 hidden">
+		<table width="100%" cellpadding="2" cellspacing="1" class="table_form">    
+		 	<tr>              
+              <td colspan=2>
+                   <span class="red">提示：发送完邮件后发送失败的邮件将自动保存在 data/logs/send_mail_error.txt 文件中  </span>&nbsp;&nbsp;&nbsp;
+				   <span class="green">您可以&nbsp;&nbsp;<a target="_blank" href="./data/logs/send_mail_error.txt">查看</a> &nbsp;&nbsp;&nbsp; <a href="{:U('Setting/delMailLog')}">删除</a></span>     
+              </td>
+            </tr>   
+            <tr>
+              <th width="120">{:L('mail_smtp')}：</th>
+              <td>
+                <input type="text" name="site[mail_smtp]" id="mail_smtp" class="input-text" size="40" value="{$set.mail_smtp}">
+				&nbsp;
+				<input type="button" value="开始群发邮件" onclick="sendMall();" class="button" id="button">	                
+              </td>
+            </tr>
+			<tr>
+              <th width="120">{:L('mail_port')}：</th>
+              <td>
+                <input type="text" name="site[mail_port]" id="mail_port" class="input-text" size="40" value="{$set.mail_port}">                
+              </td>
+            </tr> 
+			<tr>
+              <th width="120">{:L('mail_password')}：</th>
+              <td>
+                <input type="password" name="site[mail_password]" id="mail_password" class="input-text" size="40" value="{$set.mail_password}">
+				               
+              </td>
+            </tr>     
+			<tr>
+              <th width="120">{:L('mail_fromname')}：</th>
+              <td>
+                <input type="text" name="site[mail_fromname]" id="mail_fromname" class="input-text" size="40" value="{$set.mail_fromname}">
+				<span>发件人邮箱有多个以空格隔开，收件人邮箱也有多个以空格隔开</span>                
+              </td>
+            </tr>
+			<tr>
+              <th width="120">发件标题：</th>
+              <td>
+              	<input type="text" name="site[mail_title]" id="mail_title" value="{$set.mail_title}"  style="width:600px;height:30px;" />			 	             
+              </td>
+            </tr>
+			<tr>
+              <th width="120">发件内容：</th>
+              <td>
+              	<textarea name="site[mail_content]" id="mail_content"  style="width:600px;height:140px;">{$set.mail_content}</textarea>
+         						             
+              </td>
+            </tr>
+			<tr>   
+				<td colspan=2>
+					  <table cellpadding="0" cellspacing="1" class="send_mail">
+	             		<tr>
+	             			 <th width="120">发件人邮箱(多个)：</th>
+				              <td>                
+								<textarea name="site[mail_username]" id="mail_username"  style="width:400px;height:400px;">{$set.mail_username}</textarea>                
+				              </td>
+							  <th width="120">收件人邮箱(多个)：</th>
+				              <td>                
+								<textarea name="site[mail_receive_username]" id="mail_receive_username"  style="width:400px;height:400px;">{$set.mail_receive_username}</textarea>								       
+				              </td>
+	             		</tr>			
+	             	</table>	
+				</td>  
+            </tr>		
+					       
+         </table>   
+      </div> 
+      <div id="div_setting_3" class="contentList pad-10 hidden">
+      	<table width="100%" cellpadding="2" cellspacing="1" class="table_form">       
+            <tr>
+              <th width="120">{:L('site_status')} :</th>
+              <td>
+                <input type="radio" <if condition="$set.site_status eq '1'">checked="checked"</if> onclick="" value="1" name="site[site_status]"> 开启 &nbsp;&nbsp;
+                <input type="radio" <if condition="$set.site_status eq '0'">checked="checked"</if> onclick="" value="0" name="site[site_status]"> 关闭 &nbsp;&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <th>{:L('closed_reason')} :</th>
+              <td><textarea rows="4" cols="80" name="site[closed_reason]">{$set.closed_reason}</textarea></td>
+            </tr>
+         </table>      
+      </div>
+      <div class="bk15"></div>
+      <div class="btn">
+      	<input type="submit" value="{$Think.lang.submit}" onclick="return submitFrom();" name="dosubmit" class="button" id="dosubmit">
+		
+	  </div>
+    </div>
+  </div>
+
+</form>
+
+<script type="text/javascript">
+function SwapTab(name,cls_show,cls_hide,cnt,cur){
+    for(i=1;i<=cnt;i++){
+		if(i==cur){
+			 $('#div_'+name+'_'+i).show();
+			 $('#tab_'+name+'_'+i).attr('class',cls_show);
+		}else{
+			 $('#div_'+name+'_'+i).hide();
+			 $('#tab_'+name+'_'+i).attr('class',cls_hide);
+		}
+	}
+}
+function sendMall(){
+	var lang_add = "正在发送邮件";
+	window.top.art.dialog({id:'sendmall'}).close();
+	window.top.art.dialog({
+		title:lang_add,
+		id:'sendmall',
+		iframe:'?m=Setting&a=sendAllMail',width:'430',height:'180'
+	})
+}
+</script>
+
+</body></html>

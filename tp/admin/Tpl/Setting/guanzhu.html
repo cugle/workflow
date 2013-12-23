@@ -1,0 +1,38 @@
+<include file="Public:header" />
+<form id="myform" name="myform" action="{:u('Setting/edit')}" method="post">
+  <div class="pad-10">
+
+ 		<table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+            <tr>
+              <th width="100">新浪微薄 :</th>
+              <td><input type="text" name="site[weibo_url]" size="50" value="{$set.weibo_url}"></td>
+            </tr>
+            <tr>
+              <th>腾讯微薄 :</th>
+              <td><input type="text" name="site[qqweibo_url]" size="50" value="{$set.qqweibo_url}"></td>
+            </tr>
+            <tr>
+              <th>人人主页 :</th>
+              <td><input type="text" name="site[renren_url]" size="50" value="{$set.renren_url}"></td>
+            </tr>
+            <tr>
+              <th>网易微薄 :</th>
+              <td><input type="text" name="site[163_url]" size="50" value="{$set.163_url}"></td>
+            </tr>
+            <tr>
+              <th>QQ空间 :</th>
+              <td><input type="text" name="site[qqzone_url]" size="50" value="{$set.qqzone_url}"></td>
+            </tr>
+            <tr>
+              <th>豆瓣 :</th>
+              <td><input type="text" name="site[douban_url]" size="50" value="{$set.douban_url}"></td>
+            </tr>
+        </table>
+      <div class="bk15"></div>
+
+      <div class="btn"><input type="submit" value="{$Think.lang.submit}" onclick="return submitFrom();" name="dosubmit" class="button" id="dosubmit"></div>
+
+    </div>
+
+
+</body></html>

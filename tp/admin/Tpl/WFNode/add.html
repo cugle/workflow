@@ -1,0 +1,147 @@
+<tagLib name="tpl" />
+<include file="Public:header" />
+<script type="text/javascript">		
+$(function(){
+	$("#add_attatch").click(function(){
+	$("#attatch_tr").clone().prependTo($("#attatch_tr").parent());
+	});
+})
+</script>
+<form action="{:u('WFNode/add')}" method="post" name="myform" id="myform"  enctype="multipart/form-data" style="margin-top:10px;">
+  <div class="pad-10">
+    <div class="col-tab">
+      <ul class="tabBut cu-li">
+        <li id="tab_setting_1" class="on" onclick="SwapTab('setting','on','',2,1);">{$Think.lang.general_info}</li>
+      
+      </ul>
+      <div id="div_setting_1" class="contentList pad-10">
+        <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+          <tr>
+            <th width="100">{:L('node_index')}:</th>
+            <td><input type="text" name="node_index" id="node_index" class="input-text" size="60"></td>
+          </tr>
+          <tr>
+            <th>{:L('cate_id')}:</th>
+            <td><select name="defination_id" id="defination_id" style="width:200px;">
+            	<option value="0">--请选择分类--</option>
+                <volist name="defination_list['parent']" id="val">
+                  <option value="{$val.defination_id}">{$val.defination_name}</option>
+                  <notempty name="cate_list['sub'][$val['defination_id']]">
+                    <volist name="cate_list['sub'][$val['defination_id']]" id="sval">
+                      <option value="{$sval.defination_id}">&nbsp;&nbsp;&nbsp;&nbsp;{$sval.defination_cate_name}</option>
+                      <notempty name="cate_list['sub'][$sval['defination_id']]">
+                        <volist name="cate_list['sub'][$sval['defination_id']]" id="ssval">
+                          <option value="{$ssval.defination_id}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$ssval.defination_cate_name}</option>
+                        </volist>
+                      </notempty>
+                    </volist>
+                  </notempty>
+                </volist>
+              </select></td>
+          </tr>
+	  
+          <tr>
+            <th width="100">{:L('node_type')}:</th>
+            <td><select name="node_type" id="node_type" >
+              <option value="1">人为决策</option>
+              <option value="2">自动处理</option>
+              <option value="3">等待外部响应</option>
+              <option value="4">分支</option>
+              <option value="5">汇总</option>
+              <option value="6">结束</option>
+            </select></td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('init_function')}:</th>
+            <td><input type="text" name="init_function" id="init_function" class="input-text" >               </td>
+          </tr>		
+          <tr>
+            <th width="100">{:L('run_function')}:</th>
+            <td><input type="text" name="run_function" id="run_function" class="input-text" >            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('save_function')}:</th>
+            <td><input type="text" name="save_function" id="save_function" class="input-text" >            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('transit_function')}:</th>
+            <td><input type="text" name="transit_function" id="transit_function" class="input-text" >            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('prev_node_index')}:</th>
+            <td><input type="text" name="prev_node_index" id="prev_node_index" class="input-text" >            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('next_node_index')}:</th>
+            <td><input type="text" name="next_node_index" id="next_node_index" class="input-text" >            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('executor')}:</th>
+            <td><input type="text" name="executor" id="executor" class="input-text" >            </td>
+          </tr>		
+          <tr>
+            <th width="100">{:L('execute_type')}:</th>
+            <td><select name="execute_type" id="execute_type" >	
+			<option value="-1">--请选择分类--</option>
+              <option value="0">需要所有人执行</option>
+			  <option value="1">只需要一人执行</option>
+            </select>            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('remind')}:</th>
+            <td>
+			<select name="remind" id="remind" >	
+              <option value="-1">--请选择分类--</option>
+			  <option value="0">不提醒</option>
+			  <option value="1">邮件提醒</option>
+              <option value="2">短信提醒</option>
+              <option value="3">邮件短信提醒</option>
+            </select>
+			</td>
+          </tr>	  	
+          <tr>
+            <th width="100">{:L('field')}:</th>
+            <td><input type="text" name="field" id="field" class="input-text" >            </td>
+          </tr>	
+		  <tr>
+            <th width="100">{:L('max_day')}:</th>
+            <td><input type="text" name="max_day" id="max_day" class="input-text" >            </td>
+          </tr>
+		  <tr>
+            <th>{:L('status')} :</th>
+            <td><input type="radio" name="status" class="radio_style" value="1">
+              &nbsp;已审核&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="status" class="radio_style" value="0" checked="checked">
+              &nbsp;待审核              </td>
+          </tr>
+        </table>
+      </div>
+      
+      <div class="bk15"></div>
+      <div class="btn"><input type="submit" value="{$Think.lang.submit}" onclick="return submitFrom();" name="dosubmit" class="button" id="dosubmit"></div>
+    </div>
+  </div>
+</form>
+<script type="text/javascript">
+function SwapTab(name,cls_show,cls_hide,cnt,cur){
+    for(i=1;i<=cnt;i++){
+		if(i==cur){
+			 $('#div_'+name+'_'+i).show();
+			 $('#tab_'+name+'_'+i).attr('class',cls_show);
+		}else{
+			 $('#div_'+name+'_'+i).hide();
+			 $('#tab_'+name+'_'+i).attr('class',cls_hide);
+		}
+	}
+}
+
+function submitFrom(){
+	if($("#cate_id").val()==0)
+	{
+	   alert('请选择文章分类');
+	   return false;
+	}
+
+}
+</script>
+</body></html>

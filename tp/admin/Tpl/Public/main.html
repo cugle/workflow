@@ -1,0 +1,69 @@
+<include file="Public:header" />
+<link href="__ROOT__/statics/admin/css/main.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+$(function(){	
+	$(".main_con").hover(
+			  function () {
+			    $(this).css("background","#ffffcc");
+			  },
+			  function () {
+			    $(this).css("background","#ffffff");
+			  }
+	);
+})
+</script>
+<div style="padding:10px; overflow:hidden;">
+	<div class="main_top" style="clear:both;">			
+		<if condition="$no_security_info eq 1">
+			<h4>安全提示</h4>	
+			 <volist name="security_info" id="v">              
+					<p class="red" style="font-size:14px;">※　{$v}</p>				
+	       	</volist>	
+		</if>	
+		<h4>网站无法显示</h4>	
+		<p class="green">网站以前正常显示，现在无法显示请清除缓存试试，【<a href="{:u('Cache/index')}">{$Think.lang.flush_cache}</a>】</p>
+		
+	</div>
+	<div style="width:50%;" class="fl">
+		<div class="main_con fl">
+			<h6>版权信息</h6>
+			<div class="content">
+								
+				<p>开发与支持团队：phonegap中文网</p>
+				<p>UI/美工设计：phonegap中文网</p>				
+				<div class="hr">			
+				</div>				
+				<p>官方论坛：<a href="http://www.yangyongfu.com.cn" target="_blank">www.yangyongfu.com.cn</a></p>
+			</div>
+		</div>		
+		<div class="main_con fl">
+			<h6>配置信息</h6>
+			<div class="content">				
+				<volist name="server_info" id="v">
+					<p>{$key} : {$v}</p>                   
+                </volist>
+				<div class="hr">			
+				</div>					
+			
+			</div>
+		</div>		
+	</div>
+	<div style="width:49%;" class="fr">		
+		<div class="main_con fl">
+			<h6><span class="more"><a href="http://www.yangyongfu.com.cn/" target="_blank">more>></a></span>官网公告</h6>
+			<div class="content">	
+				<ul>
+					<script type="text/javascript" src="http://www.yangyongfu.com.cn/api.php?mod=js&bid=22"></script>
+				</ul>				
+			</div>
+		</div>	
+		<div class="main_con fl">
+			<h6><span class="more"><a href="http://www.yangyongfu.com.cn/" target="_blank">more>></a></span>官方推荐</h6>
+			<div class="content">				
+				<script type="text/javascript" src="http://www.yangyongfu.com.cn/api.php?mod=js&bid=23"></script>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

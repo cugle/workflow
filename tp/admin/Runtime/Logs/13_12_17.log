@@ -1,0 +1,1491 @@
+[ 2013-12-17T10:33:01+08:00 ] 127.0.0.1 /tp/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+
+[ 2013-12-17T10:33:01+08:00 ] 127.0.0.1 /tp/admin.php?m=Public&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [8] Undefined index: admin_info D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 72 行.
+NOTIC: [8] Undefined index: admin_info D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.031250s ]
+NOTIC: [8] Undefined index: admin_info D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 37 行.
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.046875s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.062500s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_admin` [ RunTime:0.031250s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:01+08:00 ] 127.0.0.1 /tp/admin.php?m=Public&a=verify&rand=1387247581
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [8] Undefined index: admin_info D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 72 行.
+NOTIC: [8] Undefined index: admin_info D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: admin_info D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 37 行.
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+
+[ 2013-12-17T10:33:06+08:00 ] 127.0.0.1 /tp/admin.php?m=Public&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [8] Undefined index: admin_info D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 72 行.
+NOTIC: [8] Undefined index: admin_info D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: admin_info D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 37 行.
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_admin` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_admin` WHERE ( user_name='admin' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:08+08:00 ] 127.0.0.1 /tp/admin.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.015625s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: lang D:\xampp\htdocs\tp\admin\Runtime\Cache\4c18d5952d0dbf1eedb8a1ec796fa788.php 第 41 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015625s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:08+08:00 ] 127.0.0.1 /tp/admin.php?m=Public&a=main
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' D:\xampp\htdocs\tp\admin\Lib\Action\PublicAction.class.php 第 69 行.
+NOTIC: [8] Use of undefined constant NOW_VERSION - assumed 'NOW_VERSION' D:\xampp\htdocs\tp\admin\Lib\Action\PublicAction.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: sub_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\6e0a2ffbae5fbbcd23e7c3063df8e324.php 第 36 行.
+NOTIC: [8] Undefined variable: big_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\6e0a2ffbae5fbbcd23e7c3063df8e324.php 第 36 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:08+08:00 ] 127.0.0.1 /tp/admin.php?m=Public&a=menu&tag=9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.015625s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_admin` [ RunTime:0.000000s ]
+SQL: SELECT `role_id` FROM `thinkphp_admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_access` [ RunTime:0.062500s ]
+SQL: SELECT `node_id` FROM `thinkphp_access` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_node` [ RunTime:0.031250s ]
+SQL: select A.id,A.action,A.action_name,A.module,A.module_name,A.data from thinkphp_node A right join thinkphp_access B ON a.id = b.node_id where A.auth_type<>2 AND A.status=1 AND A.is_show=0 AND A.group_id=9 AND  B.role_id=1 [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: lang D:\xampp\htdocs\tp\admin\Runtime\Cache\f416cf810dea4d3f6272237cf732402f.php 第 1 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:08+08:00 ] 127.0.0.1 /tp/admin.php?m=Index&a=current_pos&tag=9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: menuid D:\xampp\htdocs\tp\admin\Lib\Action\IndexAction.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `thinkphp_node` [ RunTime:0.015625s ]
+SQL: SELECT `group_id`,`module_name`,`action_name` FROM `thinkphp_node` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `title` FROM `thinkphp_group` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:10+08:00 ] 127.0.0.1 /tp/admin.php?m=Public&a=menu&tag=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_admin` [ RunTime:0.015625s ]
+SQL: SELECT `role_id` FROM `thinkphp_admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_access` [ RunTime:0.000000s ]
+SQL: SELECT `node_id` FROM `thinkphp_access` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_node` [ RunTime:0.000000s ]
+SQL: select A.id,A.action,A.action_name,A.module,A.module_name,A.data from thinkphp_node A right join thinkphp_access B ON a.id = b.node_id where A.auth_type<>2 AND A.status=1 AND A.is_show=0 AND A.group_id=1 AND  B.role_id=1 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: lang D:\xampp\htdocs\tp\admin\Runtime\Cache\f416cf810dea4d3f6272237cf732402f.php 第 1 行.
+NOTIC: [8] Undefined variable: lang D:\xampp\htdocs\tp\admin\Runtime\Cache\f416cf810dea4d3f6272237cf732402f.php 第 1 行.
+NOTIC: [8] Undefined variable: lang D:\xampp\htdocs\tp\admin\Runtime\Cache\f416cf810dea4d3f6272237cf732402f.php 第 1 行.
+NOTIC: [8] Undefined variable: lang D:\xampp\htdocs\tp\admin\Runtime\Cache\f416cf810dea4d3f6272237cf732402f.php 第 1 行.
+NOTIC: [8] Undefined variable: lang D:\xampp\htdocs\tp\admin\Runtime\Cache\f416cf810dea4d3f6272237cf732402f.php 第 1 行.
+NOTIC: [8] Undefined variable: lang D:\xampp\htdocs\tp\admin\Runtime\Cache\f416cf810dea4d3f6272237cf732402f.php 第 1 行.
+NOTIC: [8] Undefined variable: lang D:\xampp\htdocs\tp\admin\Runtime\Cache\f416cf810dea4d3f6272237cf732402f.php 第 1 行.
+NOTIC: [8] Undefined variable: lang D:\xampp\htdocs\tp\admin\Runtime\Cache\f416cf810dea4d3f6272237cf732402f.php 第 1 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:10+08:00 ] 127.0.0.1 /tp/admin.php?m=Index&a=current_pos&tag=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: menuid D:\xampp\htdocs\tp\admin\Lib\Action\IndexAction.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `thinkphp_node` [ RunTime:0.000000s ]
+SQL: SELECT `group_id`,`module_name`,`action_name` FROM `thinkphp_node` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `title` FROM `thinkphp_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:12+08:00 ] 127.0.0.1 /tp/admin.php?m=Index&a=current_pos&menuid=163
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: tag D:\xampp\htdocs\tp\admin\Lib\Action\IndexAction.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `thinkphp_node` [ RunTime:0.000000s ]
+SQL: SELECT `group_id`,`module_name`,`action_name` FROM `thinkphp_node` WHERE ( id=163 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `title` FROM `thinkphp_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:12+08:00 ] 127.0.0.1 /tp/admin.php?m=WFNode&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.031250s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` ORDER BY defination_id ASC  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\tp\admin\Lib\Action\WFNodeAction.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: sub_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\52d9fc2e2185e4adb30e172c482906f5.php 第 37 行.
+NOTIC: [8] Undefined variable: big_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\52d9fc2e2185e4adb30e172c482906f5.php 第 37 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:14+08:00 ] 127.0.0.1 /tp/admin.php?m=Index&a=current_pos&menuid=161
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: tag D:\xampp\htdocs\tp\admin\Lib\Action\IndexAction.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `thinkphp_node` [ RunTime:0.015625s ]
+SQL: SELECT `group_id`,`module_name`,`action_name` FROM `thinkphp_node` WHERE ( id=161 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `title` FROM `thinkphp_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:33:14+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination_cate` [ RunTime:0.031250s ]
+SQL: SELECT * FROM `thinkphp_wf_defination_cate` ORDER BY defination_cate_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: sub_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+NOTIC: [8] Undefined variable: big_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:34:05+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_wf_defination` (`defination_name`,`defination_cate_id`,`defination_handler`,`status`) VALUES ('1',5,'11',1) [ RunTime:0.046875s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:34:09+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination_cate` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination_cate` ORDER BY defination_cate_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: sub_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+NOTIC: [8] Undefined variable: big_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:35:09+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:35:17+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination_cate` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination_cate` ORDER BY defination_cate_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: sub_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+NOTIC: [8] Undefined variable: big_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:35:18+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: INSERT INTO `thinkphp_wf_defination` (`defination_name`,`defination_cate_id`,`defination_handler`,`status`) VALUES ('44',5,'44',1) [ RunTime:0.031250s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:35:21+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination_cate` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination_cate` ORDER BY defination_cate_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: sub_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+NOTIC: [8] Undefined variable: big_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:36:52+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_wf_defination` (`defination_name`,`defination_cate_id`,`defination_handler`,`status`) VALUES ('3',6,'3',1) [ RunTime:0.031250s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:36:55+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination_cate` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_wf_defination_cate` ORDER BY defination_cate_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: sub_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+NOTIC: [8] Undefined variable: big_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:37:24+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.015625s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_wf_defination` (`defination_name`,`defination_cate_id`,`defination_handler`,`status`) VALUES ('3W4',5,'2432',1) [ RunTime:0.046875s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2013-12-17T10:37:27+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination_cate` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_wf_defination_cate` ORDER BY defination_cate_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: sub_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+NOTIC: [8] Undefined variable: big_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:38:35+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_wf_defination` (`defination_name`,`defination_cate_id`,`defination_handler`,`status`) VALUES ('5',5,'55',1) [ RunTime:0.031250s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T10:38:38+08:00 ] 127.0.0.1 /tp/admin.php?m=WFDefination&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination_cate` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination_cate` ORDER BY defination_cate_id ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: sub_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+NOTIC: [8] Undefined variable: big_menu D:\xampp\htdocs\tp\admin\Runtime\Cache\89b7b6bea0490527aac50fd3bebb8672.php 第 37 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:07:01+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowServiceAction.class.php&a=init_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+NOTIC: [8] Undefined variable: group D:\xampp\htdocs\tp\core\Lib\Core\App.class.php 第 95 行.
+ERR: 无法加载模块:WorkFlowServiceAction.class.php
+
+[ 2013-12-17T11:07:27+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowServiceAction.class.php&a=init_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: group D:\xampp\htdocs\tp\core\Lib\Core\App.class.php 第 95 行.
+ERR: 无法加载模块:WorkFlowServiceAction.class.php
+
+[ 2013-12-17T11:07:33+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowServiceAction.class.php&a=init_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: group D:\xampp\htdocs\tp\core\Lib\Core\App.class.php 第 95 行.
+ERR: 无法加载模块:WorkFlowServiceAction.class.php
+
+[ 2013-12-17T11:07:33+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowServiceAction.class.php&a=init_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: group D:\xampp\htdocs\tp\core\Lib\Core\App.class.php 第 95 行.
+ERR: 无法加载模块:WorkFlowServiceAction.class.php
+
+[ 2013-12-17T11:07:34+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowServiceAction.class.php&a=init_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: group D:\xampp\htdocs\tp\core\Lib\Core\App.class.php 第 95 行.
+ERR: 无法加载模块:WorkFlowServiceAction.class.php
+
+[ 2013-12-17T11:07:34+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowServiceAction.class.php&a=init_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: group D:\xampp\htdocs\tp\core\Lib\Core\App.class.php 第 95 行.
+ERR: 无法加载模块:WorkFlowServiceAction.class.php
+
+[ 2013-12-17T11:07:34+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowServiceAction.class.php&a=init_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: group D:\xampp\htdocs\tp\core\Lib\Core\App.class.php 第 95 行.
+ERR: 无法加载模块:WorkFlowServiceAction.class.php
+
+[ 2013-12-17T11:07:39+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowServiceAction&a=init_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:WorkFlowServiceAction
+
+[ 2013-12-17T11:07:43+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 参数错误或者未定义:defination_id
+
+[ 2013-12-17T11:08:01+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:08:17+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:08:47+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+
+[ 2013-12-17T11:08:47+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+
+[ 2013-12-17T11:08:47+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+
+[ 2013-12-17T11:08:48+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+
+[ 2013-12-17T11:08:55+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+
+[ 2013-12-17T11:09:57+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:10:14+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 31 行.
+
+[ 2013-12-17T11:10:15+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 31 行.
+
+[ 2013-12-17T11:10:15+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 31 行.
+
+[ 2013-12-17T11:10:15+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 31 行.
+
+[ 2013-12-17T11:10:50+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 29 行.
+
+[ 2013-12-17T11:11:09+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 29 行.
+
+[ 2013-12-17T11:11:25+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+
+[ 2013-12-17T11:11:30+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+
+[ 2013-12-17T11:11:52+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+
+[ 2013-12-17T11:12:01+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 29 行.
+
+[ 2013-12-17T11:12:02+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 29 行.
+
+[ 2013-12-17T11:12:02+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 29 行.
+
+[ 2013-12-17T11:12:11+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 30 行.
+
+[ 2013-12-17T11:12:21+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 29 行.
+
+[ 2013-12-17T11:15:07+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 30 行.
+
+[ 2013-12-17T11:15:29+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 30 行.
+
+[ 2013-12-17T11:16:02+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: defination_handler D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 29 行.
+
+[ 2013-12-17T11:16:33+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:19:07+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:19:33+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:19:34+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:19:44+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:19:45+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:20:00+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:20:11+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:20:29+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:20:31+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:23:05+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:23:12+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=10
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=10 )  [ RunTime:0.015625s ]
+
+[ 2013-12-17T11:33:13+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=10
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-17T11:33:20+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=10
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=10 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+
+[ 2013-12-17T11:34:39+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=10
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=10 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Undefined variable: WorkflowProposalHandlerAction D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 31 行.
+
+[ 2013-12-17T11:38:11+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=10
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=10 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+
+[ 2013-12-17T11:39:43+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=10
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2013-12-17T11:39:46+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2013-12-17T11:40:41+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Undefined variable: WorkflowProposalHandlerAction D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 33 行.
+
+[ 2013-12-17T11:41:03+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+
+[ 2013-12-17T11:41:26+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+
+[ 2013-12-17T11:41:58+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+
+[ 2013-12-17T11:42:26+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of WFProposalHandlerAction::sendmail() should be compatible with BaseAction::sendMail($address, $title, $message) D:\xampp\htdocs\tp\admin\Lib\Action\WFProposalHandlerAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+
+[ 2013-12-17T11:44:04+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of WFProposalHandlerAction::sendmail() should be compatible with BaseAction::sendMail($address, $title, $message) D:\xampp\htdocs\tp\admin\Lib\Action\WFProposalHandlerAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+
+[ 2013-12-17T12:00:41+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of WFProposalHandlerAction::sendmail() should be compatible with BaseAction::sendMail($address, $title, $message) D:\xampp\htdocs\tp\admin\Lib\Action\WFProposalHandlerAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_wf_process` (`defination_id`,`process_desc`,`status`,`start_user`) VALUES (1,'','1',1) [ RunTime:0.125000s ]
+
+[ 2013-12-17T12:01:24+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of WFProposalHandlerAction::sendmail() should be compatible with BaseAction::sendMail($address, $title, $message) D:\xampp\htdocs\tp\admin\Lib\Action\WFProposalHandlerAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.015625s ]
+SQL: INSERT INTO `thinkphp_wf_process` (`defination_id`,`process_desc`,`status`,`start_user`) VALUES (1,'','1',1) [ RunTime:0.062500s ]
+
+[ 2013-12-17T12:01:35+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of WFProposalHandlerAction::sendmail() should be compatible with BaseAction::sendMail($address, $title, $message) D:\xampp\htdocs\tp\admin\Lib\Action\WFProposalHandlerAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_wf_process` (`defination_id`,`process_desc`,`status`,`start_user`) VALUES (1,'','1',1) [ RunTime:0.062500s ]
+
+[ 2013-12-17T12:05:05+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.031250s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of WFProposalHandlerAction::sendmail() should be compatible with BaseAction::sendMail($address, $title, $message) D:\xampp\htdocs\tp\admin\Lib\Action\WFProposalHandlerAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.125000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_wf_process` (`defination_id`,`process_desc`,`status`,`start_user`,`start_time`,`finish_time`) VALUES (1,'','1',1,'2013-12-17 12:05:05','2013-12-17 12:05:05') [ RunTime:0.078125s ]
+
+[ 2013-12-17T12:08:40+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.046875s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.125000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.171875s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.000000s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.062500s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of WFProposalHandlerAction::sendmail() should be compatible with BaseAction::sendMail($address, $title, $message) D:\xampp\htdocs\tp\admin\Lib\Action\WFProposalHandlerAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.015625s ]
+SQL: INSERT INTO `thinkphp_wf_process` (`defination_id`,`process_desc`,`current_note_index`,`status`,`start_user`,`start_time`,`finish_time`) VALUES (1,'初始化进程',0,'1',1,'2013-12-17 12:08:40','2013-12-17 12:08:40') [ RunTime:0.093750s ]
+
+[ 2013-12-17T12:10:13+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_process&defination_id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_defination` [ RunTime:0.015625s ]
+SQL: SELECT `defination_id`,`defination_cate_id`,`defination_name`,`defination_handler` FROM `thinkphp_wf_defination` WHERE ( defination_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: defination D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant Action - assumed 'Action' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(./admin/Lib/ActionAction/Array): failed to open stream: No such file or directory D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2] include_once(): Failed opening './admin/Lib/ActionAction/Array' for inclusion (include_path='.;D:\xampp\php\PEAR;D:\xampp\htdocs\tp\core/Extend/Vendor/') D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 32 行.
+NOTIC: [2048] Declaration of BaseAction::error() should be compatible with Action::error($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of BaseAction::success() should be compatible with Action::success($message = '', $jumpUrl = '', $ajax = false) D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 268 行.
+NOTIC: [2048] Declaration of WFProposalHandlerAction::sendmail() should be compatible with BaseAction::sendMail($address, $title, $message) D:\xampp\htdocs\tp\admin\Lib\Action\WFProposalHandlerAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `thinkphp_role` [ RunTime:0.000000s ]
+SQL: SELECT `name`,`status`,`remark`,`create_time`,`update_time` FROM `thinkphp_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_group` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title` FROM `thinkphp_group` WHERE ( status=1 ) ORDER BY sort ASC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_setting` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_setting`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: iframe D:\xampp\htdocs\tp\admin\Lib\Action\BaseAction.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_wf_process` (`defination_id`,`process_desc`,`current_note_index`,`status`,`context`,`start_user`,`start_time`,`finish_time`) VALUES (1,'初始化进程',0,'1','a:1:{s:6:\"billid\";s:1:\"1\";}',1,'2013-12-17 12:10:13','2013-12-17 12:10:13') [ RunTime:0.046875s ]
+
+[ 2013-12-17T17:38:04+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=list_my_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_process` WHERE ( start_user=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T17:38:27+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=list_my_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_process` WHERE ( start_user=1 )  [ RunTime:0.015625s ]
+
+[ 2013-12-17T17:38:48+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=list_my_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `thinkphp_wf_process` WHERE ( start_user=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T17:41:21+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=list_my_process
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `thinkphp_wf_process` WHERE ( start_user=1 )  [ RunTime:0.000000s ]
+
+[ 2013-12-17T18:13:05+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_thread&node_index=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.093750s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant DB_PREFIX - assumed 'DB_PREFIX' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 78 行.
+SQL: update DB_PREFIX.wf_process set current_note_index='2' where process_id=6 [ RunTime:0.031250s ]
+ERR: 1146:Table 'db_prefix.wf_process' doesn't exist
+ [ SQL语句 ] : update DB_PREFIX.wf_process set current_note_index='2' where process_id=6
+NOTIC: [8] Use of undefined constant DB_PREFIX - assumed 'DB_PREFIX' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 79 行.
+NOTIC: [8] Undefined variable: node D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 80 行.
+
+[ 2013-12-17T18:13:44+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_thread&node_index=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+SQL: update thinkphp_.wf_process set current_note_index='2' where process_id=6 [ RunTime:0.000000s ]
+ERR: 1146:Table 'thinkphp_.wf_process' doesn't exist
+ [ SQL语句 ] : update thinkphp_.wf_process set current_note_index='2' where process_id=6
+NOTIC: [8] Use of undefined constant DB_PREFIX - assumed 'DB_PREFIX' D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 79 行.
+NOTIC: [8] Undefined variable: node D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 80 行.
+
+[ 2013-12-17T18:14:02+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_thread&node_index=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+SQL: update thinkphp_.wf_process set current_note_index='2' where process_id=6 [ RunTime:0.000000s ]
+ERR: 1146:Table 'thinkphp_.wf_process' doesn't exist
+ [ SQL语句 ] : update thinkphp_.wf_process set current_note_index='2' where process_id=6
+NOTIC: [8] Undefined variable: node D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 80 行.
+
+[ 2013-12-17T18:14:15+08:00 ] 127.0.0.1 /tp/admin.php?m=WorkFlowService&a=init_thread&node_index=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_wf_process` [ RunTime:0.000000s ]
+SQL: update thinkphp_wf_process set current_note_index='2' where process_id=6 [ RunTime:0.093750s ]
+NOTIC: [8] Undefined variable: node D:\xampp\htdocs\tp\admin\Lib\Action\WorkFlowServiceAction.class.php 第 80 行.
+

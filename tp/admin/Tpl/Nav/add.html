@@ -1,0 +1,83 @@
+<include file="Public:header" />
+<div class="pad_10">
+<form action="{:u('Nav/add')}" method="post" name="myform" id="myform" >
+<table width="100%" cellpadding="2" cellspacing="1" class="table_form">	
+	<tr>
+      <th width="100">{:L('name')} :</th>
+      <td><input type="text" name="name" id="name" class="input-text"></td>
+    </tr>
+    <tr>
+      <th width="100">{:L('alias')} :</th>
+      <td><input type="text" name="alias" id="alias" class="input-text"></td>
+    </tr>	
+    <tr>
+      <th>{:L('type')} :</th>
+      <td>
+      	 <input type="radio" name="type" value="1" checked="checked"/>&nbsp;顶部&nbsp;&nbsp;
+         <input type="radio" name="type" value="2" />&nbsp;底部&nbsp;&nbsp;
+      </td>
+    </tr>
+    <tr>
+      <th>{:L('is_show')} :</th>
+      <td>
+         <input type="radio" name="is_show" value="1" checked="checked"/>&nbsp;显示&nbsp;&nbsp;
+         <input type="radio" name="is_show" value="0" />&nbsp;不显示&nbsp;&nbsp;
+      </td>
+    </tr>
+    <tr>
+      <th>{:L('in_site')} :</th>
+      <td>
+         <input type="radio" name="in_site" value="1" checked="checked" onclick="changeData(1);" />&nbsp;是&nbsp;&nbsp;
+         <input type="radio" name="in_site" value="0" onclick="changeData(0);" />&nbsp;否&nbsp;&nbsp;
+      </td>
+    </tr>
+	<tr id="tr_url" style="display:none;">
+      <th>{:L('url')}:</th>
+      <td><if condition="$nav['type'] eq '0'">{$nav.url}<else/><input type="text" name="url" id="url" class="input-text" value="http://" size="35"></if></td>
+    </tr>
+	<tr>
+      <th width="100">{:L('sort_order')} :</th>
+      <td><input type="text" name="sort_order" id="sort_order" class="input-text" onkeyup="value=value.replace(/[^\d]/g,'')"onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"></td>
+    </tr>
+    <tr>
+      <th width="100">Title :</th>
+      <td><input type="text" name="seo_title" id="seo_title" class="input-text" size="50"></td>
+    </tr>
+    <tr>
+      <th width="100">Keywords :</th>
+      <td><input type="text" name="seo_keys" id="seo_keys" class="input-text" size="50"></td>
+    </tr>
+    <tr>
+      <th width="100">Description :</th>
+      <td><textarea name="seo_desc" cols="50" rows="3"></textarea></td>
+    </tr>
+</table>
+<input type="submit" name="dosubmit" id="dosubmit" class="dialog" value=" ">
+</form>
+<script type="text/javascript">
+	$(function(){
+		$.formValidator.initConfig({formid:"myform",autotip:true,onerror:function(msg,obj){window.top.art.dialog({content:msg,lock:true,width:'250',height:'50'}, function(){this.close();$(obj).focus();})}});
+		
+		$("#name").formValidator({onshow:"不能为空",onfocus:"不能为空"}).inputValidator({min:1,onerror:"请填写导航名称"});
+		$("#alias").formValidator({onshow:"不能为空",onfocus:"不能为空"}).inputValidator({min:1,onerror:"请填写导航别名"});
+		//$("#url").formValidator({onshow:"不能为空",onfocus:"不能为空"}).inputValidator({min:1,onerror:"请填写导航RUL"});
+	});
+
+	function changeData(type) {		
+		var url=$('#tr_url')
+		switch (type) {			
+			case 1 :				
+				url.hide();				
+				break;
+			case 0 :
+				url.show();
+			break;
+			default:
+				url.hide();
+		}
+	}	
+
+</script>
+</div>
+</body>
+</html>

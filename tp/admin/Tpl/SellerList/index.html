@@ -1,0 +1,149 @@
+<tagLib name="tpl" />
+<include file="Public:header" />
+<div class="pad-lr-10">
+	<div style="padding:10px; overflow:hidden;">
+		<div class="main_top" style="clear:both;">
+			<h4>温馨提示：</h4>						
+			<p class="green">1.每次同步将自动在59秒开放平台检测下架商家，自己添加的商品也将会被认为自动下架商家，状态会被置于无效，自己添加的到时候需要手动修改回来</p>									
+		</div>
+	</div>
+	<div class="data_top">
+		<a class="cat" href="javascript:addb2cdata()">同步商家</a>
+		<a class="cat" href="javascript:add()">添加商家</a>
+	</div>
+	<form name="searchform" action="" method="get" >
+    <table width="100%" cellspacing="0" class="search-form">
+        <tbody>
+            <tr>
+	            <td>
+		            <div class="explain-col">  
+						&nbsp;商家分类 :
+		                <tpl:select options="cate_list" selected="cate_id" name='cate_id' />
+						&nbsp;关键字 :
+		                <input name="keyword" type="text" class="input-text" size="25" value="{$keyword}" />
+		                <input type="hidden" name="m" value="SellerList" />
+		                <input type="submit" name="search" class="button" value="搜索" />
+		        	</div>
+	            </td>
+            </tr>
+        </tbody>
+    </table>
+    </form>	
+    <form id="myform" name="myform" action="{:u('SellerList/delete')}" method="post" onsubmit="return check();">
+    <div class="table-list">
+    <table width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th width=50>ID</th>
+                <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>                
+                <th width=400>{:L(name)}</th> 
+				<th width=400>{:L(cash_back_rate)}</th> 
+				<th>{:L(logo)}</th>              
+				<th width=80>排序</th> 	
+				<th width=80>{:L('recommend')}</th>		
+                <th width=60>状态</th>				
+                <th width=60>操作</th>
+            </tr>
+        </thead>
+    	<tbody>
+        <volist name="seller_list_list" id="val" key="k" >
+        <tr>
+        	<td align="center">{$val.id}</td>
+            <td align="center"><input type="checkbox" value="{$val.id}" name="id[]"></td>                      
+            <td align="center">{$val.name}</td>
+			<td align="center">{$val.cash_back_rate}</td>			
+			<td align="center"><if condition="$val.site_logo neq ''"><img src="{$val.site_logo}" style="border: 1px solid #999999;padding:1px;width:80px;height:30px;" /><else /><img src="{$val.net_logo}" style="border: 1px solid #999999;padding:1px;width:80px;height:30px;" /></if></td>      		
+			<td align="center"><input type="text" class="input-text-c input-text" onblur="sort({$val.id},'sort',this.value)" id="sort_{$val.id}" value="{$val.sort}" size="4" name="listorders[{$val.id}]"></td>
+			<td align="center" onclick="status({$val.id},'recommend')" id="recommend_{$val.id}"><img src="__ROOT__/statics/images/status_{$val.recommend}.gif" /></td>
+            <td align="center" onclick="status({$val.id},'status')" id="status_{$val.id}"><img src="__ROOT__/statics/images/status_{$val.status}.gif" /></td>
+            <td align="center"><a href="javascript:edit({$val.id},'{$val.name}')">编辑</a></td>
+        </tr>
+        </volist>
+    	</tbody>
+    </table>
+    <div class="btn">
+		<label for="check_box" style="float:left;">{$Think.lang.select_all}/{$Think.lang.cancel}</label>
+		<input type="submit" class="button" name="dosubmit" value="{$Think.lang.delete}" onclick="return confirm('{$Think.lang.sure_delete}')" style="float:left;margin-left:10px;"/>
+		<div id="pages">{$page}</div>
+    </div>
+    </div>
+    </form>
+</div>
+<script language="javascript">
+function check(){
+	var ids='';
+	$("input[name='id[]']:checked").each(function(i, n){
+		ids += $(n).val() + ',';
+	});
+	if(ids=='') {
+		window.top.art.dialog({content:lang_please_select+'菜单商家名称	',lock:true,width:'200',height:'50',time:1.5},function(){});
+		return false;
+	}
+	return true;
+}
+function add() {
+	var lang_add = "{$Think.lang.add_cate}";
+	window.top.art.dialog({id:'add'}).close();
+	window.top.art.dialog({
+		title:lang_add,
+		id:'add',
+		iframe:'?m=SellerList&a=add',width:'560',height:'500'
+		}, 
+		function()
+		{
+			var d = window.top.art.dialog({id:'add'}).data.iframe;
+			var form=d.document.getElementById('dosubmit').click();
+			form.click();return false;
+			
+		}, 
+		function()
+		{
+			window.top.art.dialog({id:'add'}).close()
+		});
+}
+
+function addb2cdata(){
+	var lang_add = "{$Think.lang.addb2cdata}";
+	window.top.art.dialog({id:'addb2cdata'}).close();
+	window.top.art.dialog({
+		title:lang_add,
+		id:'addb2cdata',
+		iframe:'?m=SellerList&a=addB2cData',width:'430',height:'180'
+		})
+}
+
+function edit(id, name) {
+	var lang_edit = "{$Think.lang.edit}";
+	window.top.art.dialog({id:'edit'}).close();
+	window.top.art.dialog({
+		title:lang_edit+'--'+name,
+		id:'edit',
+		iframe:'?m=SellerList&a=edit&id='+id,width:'560',height:'500'
+		}, 
+		function()
+		{
+			var d = window.top.art.dialog({id:'edit'}).data.iframe;
+			d.document.getElementById('dosubmit').click();
+			return false;
+		}, 
+		function()
+		{
+			window.top.art.dialog({id:'edit'}).close()
+		});
+}
+function status(id,type){
+    $.get("{:u('SellerList/status')}", { id: id, type: type }, function(jsondata){
+		var return_data  = eval("("+jsondata+")");
+		$("#"+type+"_"+id+" img").attr('src', '__ROOT__/statics/images/status_'+return_data+'.gif');
+	}); 
+}
+//排序方法
+function sort(id,type,num){
+    $.get("{:u('SellerList/sort')}", { id: id, type: type,num:num }, function(jsondata){
+		var return_data  = eval("("+jsondata+")");
+		$("#"+type+"_"+id+" ").attr('value', return_data);
+	}); 
+}
+</script>
+</body>
+</html>

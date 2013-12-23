@@ -1,0 +1,63 @@
+<include file="Public:header" />
+<div class="pad_10">
+<form action="{:u('Admin/edit')}" method="post" name="myform" id="myform">
+<table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+	<tr> 
+		<th width="100">{:L('user_name')} :</th>
+		<td><input type="text" name="user_name" id="user_name" class="input-text" value="{$admin_info.user_name}" <if condition="$admin_info['user_name'] eq 'admin'">readonly="readonly"</if>></td>
+    </tr>
+
+    <tr> 
+		<th>{:L('password')} :</th>
+		<td><input type="password" name="password" id="password" class="input-text"></td>
+    </tr>
+    <tr> 
+		<th>{:L('repassword')} :</th>
+		<td><input type="password" name="repassword" id="repassword" class="input-text"></td>
+    </tr>
+    <tr>
+		<th>{:L('role_id')} :</th>
+		<td><select name="role_id">
+        	<volist name="role_list" id="val" >
+        	<option value="{$val.id}" <if condition="$admin_info['role_id'] eq $val['id']"> selected="selected"</if>>{$val.name}</option>
+            </volist>
+        </select>
+		</td>
+    </tr>
+	<tr>
+		<th>{:L('status')} :</th>
+		<td>
+      		<input type="radio" name="status" class="radio_style" value="1" <if condition="$admin_info.status eq 1"> checked</if>> &nbsp;有效&nbsp;&nbsp;&nbsp;
+        	<input type="radio" name="status" class="radio_style" value="0" <if condition="$admin_info.status eq 0"> checked</if>> &nbsp;禁用
+		</td>
+    </tr>
+</table>
+<input type="hidden" name="id" value="{$admin_info.id}" />
+<input type="submit" name="dosubmit" id="dosubmit" class="dialog" value=" ">
+</form>
+<script type="text/javascript">
+var admin_id = "{$admin_info.id}";
+var admin_name="{$admin_info.user_name}";
+$(function(){
+	$.formValidator.initConfig({formid:"myform",
+		autotip:true,
+		onerror:function(msg,obj){
+			window.top.art.dialog({content:msg,lock:true,width:'200',height:'50'}, 
+			  function(){
+				  this.close();
+				  $(obj).focus();
+				})
+		}
+	});
+		
+	$("#user_name").formValidator({onshow:"填写帐号昵称",onfocus:"填写帐号昵称"})
+		.inputValidator({min:1,onerror:"请填写帐号昵称"});
+	$("#password").formValidator({onshow:"填写密码",onfocus:"填写6位以上密码"})
+		.inputValidator({min:6,onerror:"请填写6位以上密码"});
+		
+	$("#repassword").formValidator({onshow:"确认密码",onfocus:"确认密码",oncorrect:"填写正确"})
+		.compareValidator({desid:"password",operateor:"=",onerror:"两次输入密码不一致"});
+})
+</script>
+</div>
+</body>

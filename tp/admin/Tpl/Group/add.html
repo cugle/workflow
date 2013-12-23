@@ -1,0 +1,63 @@
+<include file="Public:header" />
+<div class="pad_10">
+<form action="{:u('Group/add')}" method="post" name="myform" id="myform">
+<table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+	<tr> 
+      <th width="80">{:L('group_title')} :</th>
+      <td><input type="text" name="title" id="title" class="input-text"></td>
+    </tr>
+    <tr> 
+      <th>{:L('group_name')} :</th>
+      <td><input type="text" name="name" id="name" class="input-text"></td>
+    </tr>
+    <tr>
+      <th>{:L('sort')}  :</th>
+      <td><input type="text" name="sort" id="sort" class="input-text"></td>
+    </tr>
+    <tr>
+      <th>{:L('state')} :</th>
+      <td>
+      	<input type="radio" name="status" class="radio_style" value="1" checked="checked" > &nbsp;有效&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="status" class="radio_style" value="0"> &nbsp;禁用
+      </td>
+    </tr>
+</table>
+<input type="submit" name="dosubmit" id="dosubmit" class="dialog" value=" ">
+</form>
+<script type="text/javascript">
+	$(function(){
+		$.formValidator.initConfig({
+			formid:"myform",
+			autotip:true,
+			onerror:function(msg,obj){
+				window.top.art.dialog({
+					content:msg,
+					lock:true,
+					width:'200',
+					height:'50'},
+					 function()
+					 {
+					 	this.close();
+						$(obj).focus();
+					 })
+		}});		
+		
+		$("#title").formValidator({
+			onshow:"不能为空",onfocus:"不能为空"
+		}).inputValidator({
+			min:1,onerror:"请填写菜单分类名称"
+		}).ajaxValidator({
+			type : "get",url : "",
+			data :"m=Group&a=ajaxCheckTitle",
+			datatype : "html",
+			async:'false',success : function(data)
+			{if( data == "1" ){return true;}else{return false;}},
+			buttons: $("#dosubmit"),
+			onerror : "分类名称已经被占用",onwait : "正在检测..."}
+		);;	
+	
+	})
+</script>
+</div>
+</body>
+</html>

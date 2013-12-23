@@ -1,0 +1,173 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> --><title>down下载--苦逼孩</title><meta name="keywords" content="后端开发,PHP,ASP.NET,ASP,JSP,前端开发ajax,jquery,javascript,HTML,div+css,移动开发,HTML5,IOS,Android,数据库,Mysql,sqlserver,Oracle,linux,windows,正则表达式"><meta name="description" content="提供全面的网络编程、脚本编程、网页制作、网页特效，网站建设为站长与网络编程从业者提供学习资料。"><link href="/image/favicon.ico" rel="shortcut icon"><link rel="stylesheet" type="text/css" href="/home/Tpl/css/base.css" media="all"><link rel="stylesheet" type="text/css" href="/home/Tpl/css/header.css" media="all"><link rel="stylesheet" type="text/css" href="/home/Tpl/css/module.css" media="all"><link rel="stylesheet" type="text/css" href="/home/Tpl/css/prettify.css"><script type="text/javascript" src="__ROOT__/statics/js/jquery/jquery-1.7.2.min.js"></script><script type="text/javascript">
+		$(function(){
+		
+		//返回顶部
+		function gotoTop(min_height){
+		    //预定义返回顶部的html代码，它的css样式默认为不显示
+		    var gotoTop_html = '<div id="gotoTop">返回顶部</div>';
+		    //将返回顶部的html代码插入页面上id为page的元素的末尾 
+		    $("body").append(gotoTop_html);
+		    $("#gotoTop").click(//定义返回顶部点击向上滚动的动画
+		        function(){ $('html,body').animate({scrollTop:0},700);
+		    }).hover(//为返回顶部增加鼠标进入的反馈效果，用添加删除css类实现
+		        function(){ $(this).addClass("hover");},
+		        function(){ $(this).removeClass("hover");
+		    });
+	
+		    //获取页面的最小高度，无传入值则默认为600像素
+		    min_height ? min_height = min_height : min_height = 600;
+		    //为窗口的scroll事件绑定处理函数
+		    $(window).scroll(function(){
+		        //获取窗口的滚动条的垂直位置
+		        var s = $(window).scrollTop();
+		        //当窗口的滚动条的垂直位置大于页面的最小高度时，让返回顶部元素渐现，否则渐隐
+		        if( s > min_height){
+		            $("#gotoTop").fadeIn(100);
+		        }else{
+		            $("#gotoTop").fadeOut(200);
+		        };
+		    });
+		};
+		gotoTop();
+		
+		$(".diaoyong").mouseover(function(){
+			var num = $(this).attr('date');
+			$(".fenlei").hide();
+			$(".xdaohang"+num+"").show();
+		})
+		
+		$(".fenlei").mouseover(function(){
+			$(this).parent().addClass('thover');
+			clearTimeout(times);
+			$(this).show();
+		})
+		$(".diaoyong").mouseout(function(){
+			var num = $(this).attr('date');	
+			$(this).removeClass('thover');			
+			times = setTimeout(function(){$(".xdaohang"+num+"").hide();},300)
+		})
+		
+	})
+		
+	</script><style>
+	.fenlei{box-shadow: 0 1px 4px rgba(34, 25, 25, 0.6);}
+	.fenlei li{padding:5px;}
+	</style></head><body><!-- 头部 --><div class="header"><div class="hd-main cf"><!-- logo --><h3 class="logo"><a href="/" title="返回首页"></a></h3><!-- /logo --><!-- 主导航 --><ul class="main-nav"><li class="current"><a href="/">首页</a></li><li date="0" class="diaoyong"><a href="/qianduan">前端</a><ul class="fenlei xdaohang0"><li><a href="/css">CSS</a></li><li><a href="/js">JS</a></li><li><a href="/html">HTML</a></li><li><a href="/ajax">AJAX</a></li></ul></li><li date="1" class="diaoyong"><a href="/houduan">编程语言</a><ul class="fenlei xdaohang1"><li><a href="/php">PHP</a></li><li><a href="/asp">ASP</a></li><li><a href="/jsp">JSP</a></li><li><a href="/net">NET</a></li><li><a href="/python">Python</a></li><li><a href="/c">C</a></li><li><a href="/ruby">Ruby</a></li><li><a href="/csharp">CSharp</a></li><li><a href="/java">Java</a></li></ul></li><li date="2" class="diaoyong"><a href="/yidong">移动开发</a><ul class="fenlei xdaohang2"><li><a href="/html5">HTML5</a></li><li><a href="/ios">IOS</a></li><li><a href="/wp">WP</a></li><li><a href="/android">Android</a></li></ul></li><li date="3" class="diaoyong"><a href="/shujuku">数据库</a><ul class="fenlei xdaohang3"><li><a href="/mysql">Mysql</a></li><li><a href="/sqlserver">Sqlserver</a></li><li><a href="/oracle">Oracle</a></li></ul></li><li date="4" class="diaoyong"><a href="/fuwuqi">服务器</a><ul class="fenlei xdaohang4"><li><a href="/linux">Linux</a></li><li><a href="/windows">Windows</a></li></ul></li><li date="5" class="diaoyong"><a href="/shouce">手册</a><ul class="fenlei xdaohang5"><li><a href="/shouce/w3school">W3School手册</a></li><li><a href="/shouce/Thinkphp">Thinkphp手册</a></li><li><a href="/shouce/jquery1.8.3">Jquery1.8.3手册</a></li><li><a href="/shouce/php">PHP手册</a></li><li><a href="/shouce/nodejs">Nodejs手册</a></li><li><a href="/shouce/css3">CSS3手册</a></li></ul></li><li date="6" class="diaoyong"><a href="/down">下载</a><ul class="fenlei xdaohang6"></ul></li></ul><script type="text/javascript">
+            (function(){
+                //导航选中
+                var url = location.pathname, navg = $('.main-nav li');
+                if(url == '/' || url == '/index'){
+                    navg.eq(0).addClass('current');
+                }else if(!url.indexOf('/qianduan')){
+                    navg.eq(1).addClass('current');
+                }else if(!url.indexOf('/houduan')){
+                    navg.eq(2).addClass('current');
+                }else if(!url.indexOf('/app')){
+                    navg.eq(3).addClass('current');
+                }else if(!url.indexOf('/info')){
+                    if(!url.indexOf('/info/document') || !url.indexOf('/info/add/cate_id/36') || !url.indexOf('/info/zhuanti')){
+                        navg.eq(4).addClass('current');
+                    }else{
+                        navg.eq(7).addClass('current');
+                    }
+                }else if(!url.indexOf('/code')){
+                    navg.eq(5).addClass('current');
+                }else if(!url.indexOf('/case')){
+                    navg.eq(6).addClass('current');
+                }else if(!url.indexOf('/topic')){
+                    navg.eq(8).addClass('current');
+                }else if(!url.indexOf('/document')){
+                    navg.eq(4).addClass('current');
+                }
+            })()    
+            </script></div></div><script type="text/javascript" src="/home/Tpl/js/jquery.masonry.min.js"></script><style type="text/css">
+.loading-wrap{
+	bottom: 50px;
+	width: 100%;
+	height: 52px;
+	text-align: center;
+	display: none;
+}
+.loading {
+	padding: 10px 10px 10px 52px;
+	height: 32px;
+	line-height: 28px;
+	color: #FFF;
+	font-size: 20px;
+	border-radius: 5px;
+	background: 10px center rgba(0,0,0,.7);
+}
+</style><!-- 主体 --><div class="main cf"><!-- 分类 --><div class="box sort-box"><span class="sort-labs"><i></i></span><a href="#" class="item current">
+				全部分类&nbsp;&nbsp;
+			</a></div><!-- /分类 --><!-- 左边 --><div class="wrapper"><!-- 置顶 --><!-- /置顶 --><!-- h80横幅广告位 --><!-- 资讯列表 --><div id="container" class="container"><div class="item"><!-- 标题 --><div class='title'><a href='/down/121.html' target='_blank'>jQuery响应式事件日历表</a></div><!-- /标题 --><!-- 图片 --><a  class="img" href="/down/121.html" target="_blank"><img src="./Upload/2013/12/11/28eb61/1728_131107160450_1.jpg" alt="jQuery响应式事件日历表"></a><!-- /图片 --><input type="hidden" name="id" value="121"/><!-- 浏览及评论数量 --><div class="opt-info"><span>浏览<em>2</em></span><span>日期<em>2013-12-07</em></span></div><!-- /浏览及评论数量 --></div><div class="item"><!-- 标题 --><div class='title'><a href='/down/120.html' target='_blank'>jquery带有缩略图+进度条的焦点图</a></div><!-- /标题 --><!-- 图片 --><a  class="img" href="/down/120.html" target="_blank"><img src="./Upload/2013/12/11/07daf4/1728_131107170411_1.jpg" alt="jquery带有缩略图+进度条的焦点图"></a><!-- /图片 --><input type="hidden" name="id" value="120"/><!-- 浏览及评论数量 --><div class="opt-info"><span>浏览<em>0</em></span><span>日期<em>2013-12-07</em></span></div><!-- /浏览及评论数量 --></div><div class="item"><!-- 标题 --><div class='title'><a href='/down/119.html' target='_blank'>搜狗壁纸多效果jQuery焦点图</a></div><!-- /标题 --><!-- 图片 --><a  class="img" href="/down/119.html" target="_blank"><img src="./Upload/2013/12/11/472080/1728_131108093415_1.jpg" alt="搜狗壁纸多效果jQuery焦点图"></a><!-- /图片 --><input type="hidden" name="id" value="119"/><!-- 浏览及评论数量 --><div class="opt-info"><span>浏览<em>0</em></span><span>日期<em>2013-12-07</em></span></div><!-- /浏览及评论数量 --></div><div class="item"><!-- 标题 --><div class='title'><a href='/down/118.html' target='_blank'>jQuery瀑布流插件BlocksIt</a></div><!-- /标题 --><!-- 图片 --><a  class="img" href="/down/118.html" target="_blank"><img src="./Upload/2013/12/11/842ab1/1728_131108120332_1.jpg" alt="jQuery瀑布流插件BlocksIt"></a><!-- /图片 --><input type="hidden" name="id" value="118"/><!-- 浏览及评论数量 --><div class="opt-info"><span>浏览<em>0</em></span><span>日期<em>2013-12-07</em></span></div><!-- /浏览及评论数量 --></div><div class="item"><!-- 标题 --><div class='title'><a href='/down/117.html' target='_blank'>MovingBoxes实现汽车图片展示</a></div><!-- /标题 --><!-- 图片 --><a  class="img" href="/down/117.html" target="_blank"><img src="./Upload/2013/12/11/a2ad02/1728_131108153302_1.jpg" alt="MovingBoxes实现汽车图片展示"></a><!-- /图片 --><input type="hidden" name="id" value="117"/><!-- 浏览及评论数量 --><div class="opt-info"><span>浏览<em>0</em></span><span>日期<em>2013-12-07</em></span></div><!-- /浏览及评论数量 --></div><div class="item"><!-- 标题 --><div class='title'><a href='/down/116.html' target='_blank'>jQuery乐蜂网明星滑动列表</a></div><!-- /标题 --><!-- 图片 --><a  class="img" href="/down/116.html" target="_blank"><img src="./Upload/2013/12/11/dd0247/1728_131108154409_1.jpg" alt="jQuery乐蜂网明星滑动列表"></a><!-- /图片 --><input type="hidden" name="id" value="116"/><!-- 浏览及评论数量 --><div class="opt-info"><span>浏览<em>0</em></span><span>日期<em>2013-12-07</em></span></div><!-- /浏览及评论数量 --></div><div class="item"><!-- 标题 --><div class='title'><a href='/down/115.html' target='_blank'>jQuery Immersive Slider插件</a></div><!-- /标题 --><!-- 图片 --><a  class="img" href="/down/115.html" target="_blank"><img src="./Upload/2013/12/11/4cd38a/1728_131109100439_1.jpg" alt="jQuery Immersive Slider插件"></a><!-- /图片 --><input type="hidden" name="id" value="115"/><!-- 浏览及评论数量 --><div class="opt-info"><span>浏览<em>0</em></span><span>日期<em>2013-12-07</em></span></div><!-- /浏览及评论数量 --></div><div class="item"><!-- 标题 --><div class='title'><a href='/down/114.html' target='_blank'>jQuery字体变形插件Circletype</a></div><!-- /标题 --><!-- 图片 --><a  class="img" href="/down/114.html" target="_blank"><img src="./Upload/2013/12/11/ebd278/1728_131111104204_1.jpg" alt="jQuery字体变形插件Circletype"></a><!-- /图片 --><input type="hidden" name="id" value="114"/><!-- 浏览及评论数量 --><div class="opt-info"><span>浏览<em>0</em></span><span>日期<em>2013-12-07</em></span></div><!-- /浏览及评论数量 --></div><div class="item"><!-- 标题 --><div class='title'><a href='/down/113.html' target='_blank'>视频画廊RoyalSlider插件</a></div><!-- /标题 --><!-- 图片 --><a  class="img" href="/down/113.html" target="_blank"><img src="./Upload/2013/12/11/0756f8/1728_131111104534_1.jpg" alt="视频画廊RoyalSlider插件"></a><!-- /图片 --><input type="hidden" name="id" value="113"/><!-- 浏览及评论数量 --><div class="opt-info"><span>浏览<em>0</em></span><span>日期<em>2013-12-07</em></span></div><!-- /浏览及评论数量 --></div><div class="item"><!-- 标题 --><div class='title'><a href='/down/112.html' target='_blank'>jQuery图片显示动态文字特效</a></div><!-- /标题 --><!-- 图片 --><a  class="img" href="/down/112.html" target="_blank"><img src="./Upload/2013/12/11/04ebc8/1728_131111105506_1.jpg" alt="jQuery图片显示动态文字特效"></a><!-- /图片 --><input type="hidden" name="id" value="112"/><!-- 浏览及评论数量 --><div class="opt-info"><span>浏览<em>0</em></span><span>日期<em>2013-12-07</em></span></div><!-- /浏览及评论数量 --></div></div><div id="loading" class="loading-wrap"><span class="loading">加载中，请稍后...</span></div><!-- h80横幅广告位 --></div><!-- /左边 --><!-- 边栏 --><div class="sidebar"><!-- 上传应用 --><!-- /上传应用 --><!-- 分享到 --><!-- 分享到 --><div class="box share"><!-- Baidu Button BEGIN --><div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_qzone"></a><a class="bds_tsina"></a><a class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more"></span><a class="shareCount"></a></div><script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=785331" ></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">		document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+		</script><!-- Baidu Button END --><div style="clear:both"></div></div><!-- /分享到 --><!-- a7广告 --><!-- /a7广告 --><!-- 热门推荐 --><div class="box ranking hot-rec"><div class="index-hd"><div class="title"><i class="t-icon"></i><em>热门推荐</em></div></div><ul class="bd ellipsis tuijian"><li class="top3"><i></i><a href="/java/261205.html" title="从新编译 jfreechart 1.0.13，支持自定义字体，修正中文字体乱码">从新编译 jfreechart 1.0.13，支持自定义字体，修正中文字体乱码</a></li><li class="top3"><i></i><a href="/java/261204.html" title="Java 理论与实践: 哈希">Java 理论与实践: 哈希</a></li><li class="top3"><i></i><a href="/java/261203.html" title="Java 编程思想 02---一切都是对象（基础知识点）">Java 编程思想 02---一切都是对象（基础知识点）</a></li><li class="top3"><i></i><a href="/java/261202.html" title="SSH整合中的错误">SSH整合中的错误</a></li><li class="top3"><i></i><a href="/java/261201.html" title="Java JVM的优化">Java JVM的优化</a></li></ul></div><!-- /热门推荐 --><!-- 最新更新 --><div class="box ranking lupd"><div class="index-hd"><div class="title"><i class="t-icon"></i><em>最新更新</em></div></div><ul class="bd ellipsis fuhao"><li class="top3"><i></i><a href="/java/262381.html" title="内存储器分配策略中的堆与栈">内存储器分配策略中的堆与栈</a></li><li class="top3"><i></i><a href="/java/262380.html" title="无限极归类(java动态加载熟悉结构)">无限极归类(java动态加载熟悉结构)</a></li><li class="top3"><i></i><a href="/java/262379.html" title="Axis2 Plugin Exception: -java.lang.reflect.InvocationTargetExcep">Axis2 Plugin Exception: -java.lang.reflect.InvocationTargetExcep</a></li><li class="top3"><i></i><a href="/java/262378.html" title="WLS Exception: Need to specify class name in environment or syst">WLS Exception: Need to specify class name in environment or syst</a></li><li class="top3"><i></i><a href="/java/262377.html" title="java.lang.SecurityException: Permission Denial: starting Intent ">java.lang.SecurityException: Permission Denial: starting Intent </a></li></ul></div><!-- /最新更新 --><script>		$(function(){
+			var num = $(".fuhao li").length;
+			u=1;
+			for(var i=0;i<num;i++){
+				$(".fuhao li:eq("+i+") i").append(u);
+				u++;
+			}
+			var nums = $(".tuijian li").length;
+			o=1;
+			for(var i=0;i<nums;i++){
+				$(".tuijian li:eq("+i+") i").append(o);
+				o++;
+			}
+			$(".tuijian li:eq(4)").removeClass("top3");
+			$(".tuijian li:eq(3)").removeClass("top3");
+		})
+	</script><!-- /分享到 --><!-- 广告 --></div></div><!-- /边栏 --></div><div id="loading" class="loading-wrap"><span class="loading">加载中，请稍后...</span></div><script type="text/javascript">
+function getLocalTime(nS) { 
+return new Date(parseInt(nS) * 1000).toLocaleString().substr(0,17);
+} 
+$(function(){
+    //执行瀑布流
+    var $container = $('#container');
+	  $container.masonry({
+	    itemSelector : '.item',
+	    isAnimated: true
+	  });
+
+	var loading = $("#loading").data("on", false);
+	$(window).scroll(function(){
+		if(loading.data("on")) return;
+		if($(document).scrollTop() >			$(document).height()-$(window).height()-$('.footer').height()){
+			//加载更多数据
+			loading.data("on", true).fadeIn();
+			$.get(
+				"/ajax/getDbMore", 
+				{"last_id" : $("#container>div:last>input").val()},
+				function(data){
+					var html = "";
+					if($.isArray(data)){
+						for(i in data){
+							//html += "<div class=\"item\"><div class='title'><a href='/case/327.html' target='_blank'>"+data[i]['title']+"</a></div>";
+							//html += "<input type=\"hidden\" name=\"id\" value=\""+data[i]['id']+"\"/></div>";
+							html += '<div class="item">'+
+								'<div class="title"><a href="/down/'+data[i]['id']+'.html" target="_blank">'+data[i]['title']+'</a></div>'+
+								'<a  class="img" href="/down/'+data[i]['id']+'.html" target="_blank"><img src="'+data[i]['pic']+'" alt="'+data[i]['title']+'"></a>'+
+								'<input type="hidden" name="id" value="'+data[i]['id']+'"/>'+
+								'<div class="opt-info">'+
+									'<span>浏览<em>'+data[i]['click']+'</em></span>'+
+									'<span>日期<em>'+getLocalTime(data[i]['datatime'])+'</em></span>'+
+								'</div>'+
+							'</div>';
+						}
+						var $newElems = $(html).css({ opacity: 0 }).appendTo($container);
+						$newElems.imagesLoaded(function(){
+							$newElems.animate({ opacity: 1 });
+							$container.masonry( 'appended', $newElems, true ); 
+				        });
+				        loading.data("on", false);
+					}
+					loading.fadeOut();
+				},
+				"json"
+			);
+		}
+	});
+});
+</script><!-- 底部 --><div class="footer"><div class="ft-main cf"><div class="ft-intro"><div class="btm-logo"><p>苦逼孩提供全面的网络编程、脚本编程、网页制作、网页特效，网站建设为站长与网络编程从业者提供学习资料。</p><div class="copyright">天朝-备0101001号-01<span style="margin-left: 25px">本站由<a href="http://www.idadui.com" target="_blank">菊爆大队</a>支持维护，站内内容全部来源网络，如果侵犯了您的权益请邮件致1007426133@qq.com</span></div></div></div></div></div><!-- /底部 --><div style="display:none;"><script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fbfb20a229306927a63874cba8e6cfeb0' type='text/javascript'%3E%3C/script%3E"));
+</script></div><div id="gotoTop">返回顶部</div></body></html>

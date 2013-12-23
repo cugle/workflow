@@ -1,0 +1,108 @@
+<tagLib name="tpl" />
+<include file="Public:header" />
+<div class="pad_10">
+<form action="{:u('SellerList/update')}" method="post" name="myform" id="myform" enctype="multipart/form-data">
+<table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+	<tr> 
+      <th width="80">{:L('name')} :</th>
+      <td><input type="text" name="name" id="name" class="input-text" value="{$seller_list_info.name}" /></td>
+    </tr> 
+	<tr> 
+      <th width="80">{:L('cash_back_rate')} :</th>
+      <td><input type="text" name="cash_back_rate" id="cash_back_rate" class="input-text" value="{$seller_list_info.cash_back_rate}" ></td>
+    </tr>
+	<tr>
+		<th>{:L('site_logo')} : </th>
+		<td>	
+			<input type="file" name="img" id="img" class="input-text" size=21 />
+		</td>
+	</tr>	
+	<tr>
+		<th>{:L('net_logo')} :</th>
+		<td><input class="input-text" type="text" name="net_logo" class="input-text" style="width:400px;" value="{$seller_list_info.net_logo}"/></td>
+	</tr>
+	<tr>
+		<th></th>
+		<td><if condition="$seller_list_info.site_logo neq ''"><img scr="{$seller_list_info.site_logo}" /> <else /><img src="{$seller_list_info.net_logo}" /></if></td>
+	</tr> 
+	<tr>
+		<th>{:L('url')} :</th>
+		<td>			
+			<input type="text" name="click_url"  id="click_url" class="input-text" style="width:400px;" value="{$seller_list_info.click_url}" />
+		</td>
+	</tr>
+	<tr>
+		<th>{:L('recommend')} :</th>
+		<td>
+			<input type="radio" name="recommend" class="radio_style" value="1" <if condition="$seller_list_info.recommend eq 1">checked="checked"</if> /> &nbsp;是&nbsp;&nbsp;&nbsp;
+    		<input type="radio" name="recommend" class="radio_style" value="0" <if condition="$seller_list_info.recommend eq 0">checked="checked"</if> /> &nbsp;否
+		</td>
+	</tr>	  
+    <tr>
+      <th>{:L('sort')} :</th>
+      <td><input type="text" name="sort" id="sort" class="input-text" value="{$seller_list_info.sort}"></td>
+    </tr>
+	<tr>
+      <th>{:L('description')} :</th>
+      <td><textarea name="description" style="width:400px; height:120px;">{$seller_list_info.description}</textarea></td>
+    </tr>
+	<tr>
+		<th class="text_right">{:L('services')} :</th>
+		<td class="text_left">
+			&nbsp;<input type="checkbox" name="freeshipment" value="1" <if condition="$seller_list_info.freeshipment eq 1">checked="checked"</if> />
+			免费送货&nbsp;
+			<input type="checkbox" name="installment" value="1" <if condition="$seller_list_info.installment eq 1">checked="checked"</if> />
+			分期付款&nbsp;
+			<input type="checkbox" name="has_invoice" value="1" <if condition="$seller_list_info.has_invoice eq 1">checked="checked"</if> />
+			&nbsp;有发票  	
+		</td>
+	</tr>
+	<tr>
+		<th class="text_right">所属分类 :</th>
+		<td class="text_left">
+			{$cate_str}
+		</td>
+	</tr>
+    <tr>
+      <th>{:L('state')} :</th>
+      <td>
+      	<input type="radio" name="status" class="radio_style" value="1" <if condition="$seller_list_info.status eq 1">checked="checked"</if>
+
+  > &nbsp;有效&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="status" class="radio_style" value="0" <if condition="$seller_list_info.status eq 0">checked="checked"</if>> &nbsp;禁用
+      </td>
+    </tr>
+	<input type="hidden" name="id" value="{$seller_list_info.id}" />
+</table>
+<input type="submit" name="dosubmit" id="dosubmit" class="dialog" value=" ">
+</form>
+<script type="text/javascript">
+	$(function(){
+		$.formValidator.initConfig({
+			formid:"myform",
+			autotip:true,
+			onerror:function(msg,obj){
+				window.top.art.dialog({
+					content:msg,
+					lock:true,
+					width:'200',
+					height:'50'},
+					 function()
+					 {
+					 	this.close();
+						$(obj).focus();
+					 })
+		}});		
+		
+		$("#name").formValidator({
+			onshow:"不能为空",onfocus:"不能为空"
+		}).inputValidator({
+			min:1,onerror:"请填写分类名称"
+		});
+
+	
+	})
+</script>
+</div>
+</body>
+</html>

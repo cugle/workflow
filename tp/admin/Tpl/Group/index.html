@@ -1,0 +1,85 @@
+<include file="Public:header" />
+<div class="pad-lr-10">
+    <form id="myform" name="myform" action="{:u('Group/delete')}" method="post" onsubmit="return check();">
+    <div class="table-list">
+    <table width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th width=60>ID</th>
+                <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>               
+                <th width=100>菜单分类名称</th>
+                <th>分类标识</th>     
+				<th width=60>排序</th> 			
+                <th width=60>状态</th>				
+                <th width=60>操作</th>
+            </tr>
+        </thead>
+    	<tbody>
+        <volist name="group_list" id="val" >
+        <tr>
+        	 <td align="center">{$val.id}</td>
+            <td align="center"><input type="checkbox" value="{$val.id}" name="id[]" <if condition="$val['user_name'] eq 'group'">disabled="disabled"</if>></td>           
+            <td align="center">{$val.title}</td>
+            <td align="center">{$val.name}</td>     		
+			<td align="center"><input type="text" class="input-text-c input-text" onblur="sort({$val.id},'sort',this.value)" id="sort_{$val.id}" value="{$val.sort}" size="4" name="listorders[{$val.id}]"></td>
+            <td align="center" onclick="status({$val.id},'status')" id="status_{$val.id}"><img src="__ROOT__/statics/images/status_{$val.status}.gif" /></td>
+            <td align="center"><a href="javascript:edit({$val.id},'{$val.title}')">编辑</a></td>
+        </tr>
+        </volist>
+    	</tbody>
+    </table>
+    <div class="btn">
+		<label for="check_box" style="float:left;">{$Think.lang.select_all}/{$Think.lang.cancel}</label>
+		<input type="submit" class="button" name="dosubmit" value="{$Think.lang.delete}" onclick="return confirm('{$Think.lang.sure_delete}')" style="float:left;margin-left:10px;"/>
+		<div id="pages">{$page}</div>
+    </div>
+    </div>
+    </form>
+</div>
+<script language="javascript">
+function check(){
+	var ids='';
+	$("input[name='id[]']:checked").each(function(i, n){
+		ids += $(n).val() + ',';
+	});
+	if(ids=='') {
+		window.top.art.dialog({content:lang_please_select+'菜单分类名称	',lock:true,width:'200',height:'50',time:1.5},function(){});
+		return false;
+	}
+	return true;
+}
+function edit(id, name) {
+	var lang_edit = "{$Think.lang.edit}";
+	window.top.art.dialog({id:'edit'}).close();
+	window.top.art.dialog({
+		title:lang_edit+'--'+name,
+		id:'edit',
+		iframe:'?m=Group&a=edit&id='+id,width:'480',height:'170'
+		}, 
+		function()
+		{
+			var d = window.top.art.dialog({id:'edit'}).data.iframe;
+			d.document.getElementById('dosubmit').click();
+			return false;
+		}, 
+		function()
+		{
+			window.top.art.dialog({id:'edit'}).close()
+		});
+}
+function status(id,type){
+    $.get("{:u('Group/status')}", { id: id, type: type }, function(jsondata){
+		var return_data  = eval("("+jsondata+")");
+		$("#"+type+"_"+id+" img").attr('src', '__ROOT__/statics/images/status_'+return_data+'.gif');
+	}); 
+}
+//排序方法
+function sort(id,type,num){
+    $.get("{:u('Group/sort')}", { id: id, type: type,num:num }, function(jsondata){
+		var return_data  = eval("("+jsondata+")");
+		$("#"+type+"_"+id+" ").attr('value', return_data);
+	}); 
+}
+</script>
+</body>
+</html>

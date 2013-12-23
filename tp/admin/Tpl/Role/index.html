@@ -1,0 +1,69 @@
+<include file="Public:header" />
+<script language="javascript" type="text/javascript" src="__ROOT__/statics/js/jquery/jquery.role.js"></script>
+<div class="pad-lr-10">
+    <form id="myform" name="myform" action="{:u('Role/delete')}" method="post" onsubmit="return check();">
+    <div class="table-list">
+    <table width="100%" cellspacing="0">
+        <thead>
+            <tr>
+            	<th width="50">ID</th>
+                <th width="20"><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>                
+                <th width="200">{:L('name')}</th>
+                <th>{:L('remark')}</th>
+      			<th width="60">{:L('status')}</th>
+                <th width="120">{:L('operational')}</th>
+            </tr>
+        </thead>
+    	<tbody>
+        <volist name="role_list" id="val" >
+        <tr>
+        	<td align="center">{$val.id}</td>
+            <td align="center"><input type="checkbox" value="{$val.id}" name="id[]"></td>            
+            <td align="center">{$val.name}</td>
+            <td align="center">{$val.remark}</td>
+            <td align="center" onclick="status({$val.id},'status')" id="status_{$val.id}"><img src="__ROOT__/statics/images/status_{$val.status}.gif"</td>
+            <td align="center"><a href="{:u('Role/auth', array('id'=>$val['id']))}">管理权限</a> | <a href="javascript:edit({$val.id},'{$val.name}')">{$Think.lang.edit}</a></td>
+        </tr>
+        </volist>
+    	</tbody>
+    </table>
+
+    <div class="btn">
+    <label for="check_box" style="float:left;">全选/取消</label>
+    <input type="submit" class="button" name="dosubmit" value="删除" onclick="return confirm('确定删除')" style="float:left;margin-left:10px;"/>
+    <div id="pages">{$page}</div>
+    </div>
+
+
+    </div>
+    </form>
+</div>
+<script language="javascript">
+function edit(id, name) {
+	var lang_edit = "编辑";
+	window.top.art.dialog({id:'edit'}).close();
+	window.top.art.dialog({title:lang_edit+'--'+name,id:'edit',iframe:'?m=Role&a=edit&id='+id,width:'400',height:'230'}, function(){var d = window.top.art.dialog({id:'edit'}).data.iframe;d.document.getElementById('dosubmit').click();return false;}, function(){window.top.art.dialog({id:'edit'}).close()});
+}
+
+function check(){
+	var ids='';
+	$("input[name='id[]']:checked").each(function(i, n){
+		ids += $(n).val() + ',';
+	});
+
+	if(ids=='') {
+		window.top.art.dialog({content:'请选择你需要操作的角色',lock:true,width:'200',height:'50',time:1.5},function(){});
+		return false;
+	}
+	return true;
+}
+
+function status(id,type){
+    $.get("{:u('Role/status')}", { id: id, type: type }, function(jsondata){
+		var return_data  = eval("("+jsondata+")");
+		$("#"+type+"_"+id+" img").attr('src', '__ROOT__/statics/images/status_'+return_data+'.gif');
+	}); 
+}
+</script>
+</body>
+</html>

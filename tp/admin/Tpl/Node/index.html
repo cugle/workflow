@@ -1,0 +1,110 @@
+<include file="Public:header" />
+<div class="pad-lr-10">
+	<div class="main_top" style="clear:both;">
+		<p class="green"><font color=red>（警告：非专业人员请不要操作这里，会出乱子的噢）</font></p>		
+	</div>
+	
+	<form name="searchform" action="" method="get" >
+    <table width="100%" cellspacing="0" class="search-form">
+        <tbody>
+            <tr>
+            <td>
+            <div class="explain-col">
+				{:L('group_id')} : <select name="group_id" style="width:140px;">
+					<option value="" <if condition="$group_id eq ''"> selected="selected" </if>>--所有导航--</option>
+					<volist name="group_list" id="val" >
+        				<option value="{$val.id}" <if condition="$group_id eq $val['id']"> selected="selected" </if>>　{$val.title}</option>
+					</volist>
+				</select>
+				  　模块/模块名称 : 
+				<input type="text" name="keyword" value="{$keyword}" />
+				<input type="hidden" name="m" value="Node" />
+                <input type="submit" name="search" class="button" value="搜索" />
+        	</div>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+	
+    <form id="myform" name="myform" action="{:u('Node/delete')}" method="post" onsubmit="return check();">
+    <div class="table-list">
+
+    <table width="100%" cellspacing="0">
+        <thead>
+            <tr>
+            	<th width="50">ID</th>
+                <th width="40"><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>                
+                <th>{:L('module')}</th>
+      			<th>{:L('module_name')}</th>
+                <th>{:L('action')}</th>
+                <th>{:L('action_name')}</th>
+                <th width="40">{:L('sort')}</th>
+                <th width="40">{:L('status')}</th>
+                <th width="40">{:L('operational')}</th>
+            </tr>
+        </thead>
+    	<tbody>
+        <volist name="node_list" id="val" >
+        <tr>
+        	<td align="center">{$val.id}</td>
+            <td align="center"><input type="checkbox" value="{$val.id}" name="id[]"></td>            
+            <td align="center"><font color=blue>{$val.module}</font></td>
+            <td align="center"><b>{$val.module_name}</b></td>
+      		<td align="center">{$val.action}</td>
+            <td align="center">{$val.action_name}</td>
+            <td align="center"><input type="text" class="input-text-c input-text" id="sort_{$val.id}" onblur="sort({$val.id},'sort',this.value)" value="{$val.sort}" size="4" name="listorders[{$val.id}]"></td>
+            <td align="center" onclick="status({$val.id},'status')" id="status_{$val.id}"><img src="__ROOT__/statics/images/status_{$val.status}.gif" /></td>
+            <td align="center"><a href="javascript:edit({$val.id},'{$val.action_name}')">编辑</a></td>
+        </tr>
+        </volist>
+    	</tbody>
+    </table>
+
+    <div class="btn">
+		<label for="check_box">{$Think.lang.select_all}/{$Think.lang.cancel}</label>
+		<input type="submit" class="button" name="dosubmit" value="{$Think.lang.delete}" onclick="return confirm('{$Think.lang.sure_delete}')"/>
+		<div id="pages">{$page}</div>
+    </div>
+
+    </div>
+    </form>
+</div>
+<script language="javascript">
+function edit(id, name) {
+	var lang_edit = "{$Think.lang.edit}";
+	window.top.art.dialog({id:'edit'}).close();
+	window.top.art.dialog({title:lang_edit+'--'+name,id:'edit',iframe:'?m=Node&a=edit&id='+id,width:'500',height:'480'}, function(){var d = window.top.art.dialog({id:'edit'}).data.iframe;d.document.getElementById('dosubmit').click();return false;}, function(){window.top.art.dialog({id:'edit'}).close()});
+
+}
+function check(){
+	var ids='';
+	$("input[name='id[]']:checked").each(function(i, n){
+		ids += $(n).val() + ',';
+	});
+
+	if(ids=='') {
+		window.top.art.dialog({content:'请选择需要操作的菜单',lock:true,width:'200',height:'50',time:1.5},function(){});
+		return false;
+	}
+	return true;
+}
+function status(id,type){
+    $.get("{:u('Node/status')}", { id: id, type: type }, function(jsondata){
+		var return_data  = eval("("+jsondata+")");
+		$("#"+type+"_"+id+" img").attr('src', '__ROOT__/statics/images/status_'+return_data+'.gif');
+	}); 
+}
+
+//排序方法
+function sort(id,type,num){
+    
+    $.get("{:u('Node/sort')}", { id: id, type: type,num:num }, function(jsondata){
+        
+		$("#"+type+"_"+id+" ").attr('value', jsondata);
+	},'json'); 
+}
+
+</script>
+</body>
+</html>

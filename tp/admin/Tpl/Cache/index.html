@@ -1,0 +1,35 @@
+<include file="Public:header" />
+  <div class="pad-10">
+    <div class="col-tab">
+    
+      <ul class="tabBut cu-li">
+        <li id="tab_setting_1" class="on">缓存管理</li>
+      </ul>
+      
+      <div id="div_setting_1" class="contentList pad-10">
+          <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+            <tr>
+                <td width="150">全站缓存</td>
+                <td align="left"><a href="{:U('Cache/clearCache',array('id'=>1))}" class="button">更新</a></td>
+            </tr>
+            <tr>
+                <td width="150">后台模版缓存</td>
+                <td align="left"><a href="{:U('Cache/clearCache',array('id'=>2))}" class="button">更新</a></td>
+            </tr>
+            <tr>
+                <td width="150">前台模版缓存</td>
+                <td align="left"><a href="{:U('Cache/clearCache',array('id'=>3))}" class="button">更新</a></td>
+            </tr>
+            <tr>
+                <td width="150">数据库缓存</td>
+                <td align="left"><a href="{:U('Cache/clearCache',array('id'=>4))}" class="button">更新</a></td>
+            </tr>			
+        </table>
+      </div>
+     
+      <div class="bk15"></div>
+
+    </div>
+
+  </div>
+</body></html>

@@ -1,0 +1,96 @@
+<include file="Public:header" />
+<div class="pad-lr-10">
+  <form id="myform" name="myform" action="{:u('Ad/delete')}" method="post" onsubmit="return check();">
+    <div class="table-list">
+      <table width="100%" cellspacing="0">
+        <thead>
+          <tr>
+          	<th width=50>ID</th>
+            <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>            
+            <th>{:L('name')}</th>
+            <th>{:L('url')}</th>
+            <th>{:L('type')}</th>
+            <th>{:L('board_id')}</th>
+            <th>{:L('clicks')}</th>
+            <th width="60">{:L('ordid')}</th>
+            <th width="40">{:L('status')}</th>
+            <th width="80">{:L('operational')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <volist name="ad_list" id="val" >
+          <tr>       
+		 	<td align="center">{$val.id}</td>   	
+            <td align="center"><input type="checkbox" value="{$val.id}" name="id[]"></td>            
+            <td align="center">{$val.name}</td>
+            <td align="center">{$val.url}</td>
+            <td align="center">{$ad_type_arr[$val['type']]}</td>
+            <td align="center">{$val.adboard_name}</td>
+            <td align="center">{$val.clicks}</td>
+            <td align="center"><input type="text" class="input-text-c input-text" value="{$val.ordid}" id="sort_{$val.id}" onblur="sort({$val.id},'ordid',this.value)" size="4" name="listorders[{$val.id}]"></td>
+            <td align="center"><if condition="$val.status eq 1">
+            	<font class="green">开启</font>
+            <else />
+            	<font color="red">关闭</font>
+            </if></td>
+            <td align="center"><a href="javascript:edit({$val.id},'{$val.name}')">编辑</a></td>
+          </tr>
+          </volist>
+        </tbody>
+      </table>
+<div class="btn">
+    <label for="check_box">{$Think.lang.select_all}/{$Think.lang.cancel}</label>
+    <input type="submit" class="button" name="dosubmit" value="{$Think.lang.delete}" onclick="return confirm('{$Think.lang.sure_delete}')"/>
+    
+    <div id="pages">{$page}</div>
+    </div>
+      
+    </div>
+  </form>
+</div>
+<script type="text/javascript">
+function edit(ad_id, name) {
+	var lang_edit = "{$Think.lang.edit}";
+	window.top.art.dialog({id:'edit'}).close();
+	window.top.art.dialog(
+	{
+		title:lang_edit+'--'+name,
+		id:'edit',
+		iframe:'?m=Ad&a=edit&id='+ad_id,width:'620',height:'500'
+	}, 
+	function()
+	{
+		var d = window.top.art.dialog({id:'edit'}).data.iframe;
+		d.document.getElementById('dosubmit').click();
+		return false;
+	},
+	function()
+	{
+		window.top.art.dialog({id:'edit'}).close()
+	});
+}
+var str_name = "广告";
+function check(){
+	if($("#myform").attr('action') != '{:u("Ad/ordid")}') {
+		var ids='';
+		$("input[name='id[]']:checked").each(function(i, n){
+			ids += $(n).val() + ',';
+		});
+
+		if(ids=='') {
+			window.top.art.dialog({content:lang_please_select+str_name,lock:true,width:'200',height:'50',time:1.5},function(){});
+			return false;
+		}
+	}
+	return true;
+}
+//排序方法
+function sort(id,type,num){
+    
+    $.get("{:u('Ad/sort')}", { id: id, type: type,num:num }, function(jsondata){
+        
+		$("#"+type+"_"+id+" ").attr('value', jsondata.data);
+	},'json'); 
+}
+</script>
+</body></html>

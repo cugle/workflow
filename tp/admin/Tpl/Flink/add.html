@@ -1,0 +1,51 @@
+<include file="Public:header" />
+<div class="pad_10">
+    <form action="{:u('Flink/add')}" method="post" name="myform" id="myform" enctype="multipart/form-data" >
+        <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+            <tr>
+                <th>{:L('cate_id')} :</th>
+                <td><select name="cate_id" style="width:140px;">
+                        <volist name="flink_cate_list" id="val" >
+                            <option value="{$val.id}">{$val.name}</option>
+                        </volist>
+                    </select></td>
+            </tr>
+            <tr>
+                <th width="60">{:L('name')} :</th>
+                <td><input type="text" name="name" id="name" size="30" ></td>
+            </tr>
+            <tr>
+                <th>{:L('url')} :</th>
+                <td><input type="text" name="url" id="url" size="30" ></td>
+            </tr>
+           <!--
+		    <tr>
+                <th>{:L('img')}:</th>
+                <td><input type="file" name="img" id="img"/></td>
+            </tr>
+		   -->
+            <tr>
+                <th>{:L('ordid')} :</th>
+                <td><input type="text" name="ordid" id="sort_order" class="input-text" size=8 value="99" onkeyup="value=value.replace(/[^\d]/g,'')"onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"></td>
+            </tr>
+            <tr>
+                <th>{:L('status')} :</th>
+                <td><input type="radio" name="status" class="radio_style" value="1">
+                    <code>&nbsp;</code>已审核&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="status" class="radio_style" value="0" checked="checked">
+                    <code>&nbsp;</code>未审核&nbsp;&nbsp;&nbsp; </td>
+            </tr>
+        </table>
+        <input type="submit" name="dosubmit" id="dosubmit" class="dialog" value="">
+    </form>
+    <script type="text/javascript">
+	$(function(){
+		$.formValidator.initConfig({formid:"myform",autotip:true,onerror:function(msg,obj){window.top.art.dialog({content:msg,lock:true,width:'250',height:'50'}, function(){this.close();$(obj).focus();})}});
+		
+		$("#name").formValidator({onshow:"不能为空",onfocus:"不能为空"}).inputValidator({min:1,onerror:"请填写链接名称"});
+		
+		$("#url").formValidator({onshow:"不能为空",onfocus:"http开头"}).inputValidator({min:1,onerror:"请填写链接地址"});
+	})
+</script>
+</div>
+</body></html>

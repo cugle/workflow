@@ -1,0 +1,55 @@
+/*
+// | CugleCms 后台管理系统
+// +----------------------------------------------------------------------
+// | provide by ：yangyongfu.com.cn
+// 
+// +----------------------------------------------------------------------
+// | Author: 452275147@qq.com
+// +----------------------------------------------------------------------
+*/
+@CHARSET "UTF-8";
+a{
+	color:#367ABB;
+}
+.main_con{
+	border: 1px solid #C7D8EA;	
+	width:100%;
+	margin:5px 0px;
+}
+.main_con div.content {
+    padding: 9px 10px;
+}
+ul{
+	padding-left:10px;
+}
+ul li{
+	line-height:150%;
+}
+.main_con div.content p{
+	line-height:180%;
+}
+.main_con h6 {
+    background:url("../images/x_bg.png") repeat-x left -42px;
+    border-bottom: 1px solid #C7D8EA;
+    color: #3A6EA5;
+    height: 26px;
+    line-height: 28px;
+    padding: 0 10px;
+	font-size:12px;
+}
+.main_auto {
+    overflow: hidden;
+}
+.onShow, .onFocus, .onError, .onCorrect, .onLoad, .onTime {
+    background: url("../images/msg_bg.png") no-repeat 0 0;
+    color: #444444;
+    display: -moz-inline-stack;
+    line-height: 18px;
+    margin-left: 10px;
+    padding: 2px 10px 2px 23px;
+    vertical-align: middle;
+}
+.onCorrect {
+    background-position: 3px -247px;
+    border-color: #40B3FF;
+}

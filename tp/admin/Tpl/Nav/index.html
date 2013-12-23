@@ -1,0 +1,84 @@
+<include file="Public:header" />
+<div class="pad-lr-10">
+    <form id="myform" name="myform" action="{:u('Nav/delete')}" method="post" onsubmit="return check();">
+    <div class="table-list">
+    <table width="100%" cellspacing="0">
+        <thead>
+            <tr>
+            	<th width="50">ID</th>
+                <th width="4%"><input type="checkbox" value="all" id="check_box" onclick="selectall('id[]');" name="all"></th>              	
+                <th width="100">{:L('name')}</th>
+                <th width="100">{:L('alias')}</th>
+                <th align="left">&nbsp;&nbsp;&nbsp;&nbsp;{:L('url')}</th>
+				 <th width="260">{:L('category')}</th>
+                <th width="60">{:L('type')}</th>
+                <th width="60">{:L('is_show')}</th>
+                <th width="60">{:L('in_site')}</th>
+              	<th width="40">{:L('sort_order')}</th>
+                <th width="40">{:L('operational')}</th>
+            </tr>
+        </thead>
+    	<tbody>
+        	<volist name="nav_list" id='val'>
+            <tr>
+            	<td align="center">{$val.id}</td>
+                <td align="center"><input type="checkbox" value="{$val.id}" name="id[]" <if condition="$val['system'] eq '1'">disabled</if>></td>                
+                <td align="center">{$val.name}</td>
+                <td align="center"><b>{$val.alias}</b></td>
+                <td align="left">&nbsp;&nbsp;&nbsp;<font color="red">{$val.url}</font></td>
+				<td align="center">{$val.category.name}</td>
+                <td align="center"><if condition="$val.type eq '1'"><em class="blue">顶部</em><else/>底部</if></td>
+                <td align="center" onclick="status({$val.id},'is_show')" id="is_show_{$val.id}"><img src="__ROOT__/statics/images/status_{$val.is_show}.gif"</td>
+                <td align="center"><if condition="$val.in_site eq '1'"><em class="blue">是</em><else/>否</if></td>
+                <td align="center"><input type="text" class="input-text-c input-text" id="sort_{$val.id}" onblur="sort({$val.id},'sort_order',this.value)" value="{$val.sort_order}" size="4" name="listorders[{$val.id}]"></td>
+                <td align="center"><a class="blue" href="javascript:edit({$val.id},'{$val.name}')">编辑</a> </td>
+            </tr>
+            </volist>
+        
+        </tbody>
+    </table>
+
+    <div class="btn">
+    <label for="check_box">全选/取消</label>
+    <input type="submit" class="button" name="dosubmit" value="删除" onclick="return confirm('确认删除')"/>
+    
+    </div>
+
+    </div>
+    </form>
+</div>
+<script type="text/javascript">
+function edit(id, name) {
+	var lang_edit = "编辑";
+	window.top.art.dialog({id:'edit'}).close();
+	window.top.art.dialog({title:lang_edit+'--'+name,id:'edit',iframe:'?m=Nav&a=edit&id='+id,width:'540',height:'510'}, function(){var d = window.top.art.dialog({id:'edit'}).data.iframe;d.document.getElementById('dosubmit').click();return false;}, function(){window.top.art.dialog({id:'edit'}).close()});
+}
+
+function check(){
+	if($("#myform").attr('action') != '{:u("Nav/sort_order")}') {
+		var ids='';
+		$("input[name='id[]']:checked").each(function(i, n){
+			ids += $(n).val() + ',';
+		});
+		if(ids=='') {
+			window.top.art.dialog({content:'请选择修改项',lock:true,width:'200',height:'50',time:1.5},function(){});
+			return false;
+		}
+	}
+	return true;
+}
+function status(id,type){
+    $.get("{:u('Nav/status')}", { id: id, type: type }, function(jsondata){
+		var return_data  = eval("("+jsondata+")");
+		$("#"+type+"_"+id+" img").attr('src', '__ROOT__/statics/images/status_'+return_data+'.gif');
+	}); 
+}
+//排序方法
+function sort(id,type,num){    
+    $.get("{:u('Nav/sort')}", { id: id, type: type,num:num }, function(jsondata){        
+		$("#"+type+"_"+id+" ").attr('value', jsondata);
+	},'json'); 
+}
+</script>
+</body>
+</html>

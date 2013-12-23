@@ -1,0 +1,58 @@
+/*
+// | CugleCms 后台管理系统
+// +----------------------------------------------------------------------
+// | provide by ：yangyongfu.com.cn
+// 
+// +----------------------------------------------------------------------
+// | Author: 452275147@qq.com
+// +----------------------------------------------------------------------
+*/
+@CHARSET "UTF-8";
+body {
+	background:#3A6DA4;
+}
+#login {
+	width:450px;
+	height:256px;
+	background:url(../images/login.png) no-repeat left center;
+	margin:120px auto 0 auto;
+}
+#login dl {
+	width:250px;
+	margin:0 0 0 auto;
+	padding:55px 0 0 0;
+	color:#fff;
+}
+#login dl dd {
+	margin:4px 0;
+}
+#login dl dd input.text {
+	width:143px;
+}
+#login dl dd input.submit {
+	background: url("../images/button_bg.gif") repeat-x 0 0;
+    border: 1px solid #2D5082;
+    margin: 4px;
+	margin-left:72px;
+    padding: 2px 8px 0;
+	cursor:pointer;
+}
+#login dl dd.code {
+	padding:0 0 0 72px;
+}
+#login dl dd.code img {
+	border:1px solid #eee;
+	cursor:pointer;
+}
+#verify{
+    height: 22px;   
+    width: 90px;
+	margin-right:3px;
+}
+#verify_img{
+	cursor:pointer;
+	height: 22px; 
+}
+.text{
+	height:22px;
+}

@@ -1,0 +1,22 @@
+var str = "";
+<if condition="$ad['type'] eq 'code'">
+str += '{$ad.code}';
+str=str.replace(/script_str/g,"script");
+<else />
+str += "<a href='{:u(\'Advert/click\',array(\'id\'=>$ad['id']))}' target='_blank'>";
+<?php if($ad['type'] == 'text'):?>
+	str += '{$ad.code}';
+<elseif condition="$ad['type'] eq 'image'"/>
+	str += "<img title='' class='ad_img' src='__ROOT__/data/advert/{$ad.code}' width='{$board_info[\'width\']-2}' height='{$board_info[\'height\']-2}'>";
+<elseif condition="$ad['type'] eq 'flash'"/>
+	str += "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='{$board_info.width}' height='{$board_info.height}' id='FlashAD_"+this.ADID+"' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0'>";
+	str += "<param name='movie' value='data/advert/{$ad.code}' />"; 
+	str += "<param name='quality' value='autohigh' />";
+	str += "<param name='wmode' value='opaque'/>";
+	str += "<embed src='data/advert/{$ad.code}' quality='autohigh' wmode='opaque' name='flashad' swliveconnect='TRUE' pluginspage='http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width='{$board_info.width}' height='{$board_info.height}'></embed>";
+	str += "</object>";	  
+<?php endif;?>
+str += "</a>";
+</if>
+
+document.write(str);

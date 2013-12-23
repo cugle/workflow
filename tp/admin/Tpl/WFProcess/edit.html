@@ -1,0 +1,138 @@
+<tagLib name="tpl" />
+<include file="Public:header" />
+<script type="text/javascript">	
+$(function(){
+	$("#add_attatch").click(function(){
+		$("#attatch_tr").clone().prependTo($("#attatch_tr").parent());
+	});
+	$(".delete_attatch").click(function(){
+		var article_id = $("#article_id").val();
+		var aid = $(this).attr('aid');
+		$.get("admin.php?m=article&a=delete_attatch&id="+article_id+"&aid="+aid, function(data){
+			$("#list_"+aid).hide();
+		});
+	});
+})
+</script>
+
+<form action="{:u('WFNode/edit')}" method="post" name="myform" id="myform" enctype="multipart/form-data" style="margin-top:10px;">
+  <div class="pad-10">
+  <div class="col-tab">
+  <ul class="tabBut cu-li">
+    <li id="tab_setting_1" class="on" onclick="SwapTab('setting','on','',2,1);">{$Think.lang.general_info}</li>
+  </ul>
+  <div id="div_setting_1" class="contentList pad-10">
+    <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+      <tr>
+        <th width="100">{:L(node_index)} :</th>
+        <td><input type="text" name="node_index" id="node_index" class="input-text" size="60" value="{$node.node_index}"></td>
+      </tr>
+      <tr>
+        <th>{:L('cate_id')} :</th>
+        <td><select name="defination_id" id="defination_id" style="width:200px;">
+        	<option value="0">--请选择分类--</option>
+            <volist name="defination_list['parent']" id="val">
+              <option  <if condition="$node['defination_id'] eq $val['defination_id']"> selected="selected" </if> value="{$val.defination_id}">{$val.defination_name}</option>
+            </volist>
+          </select></td>
+      </tr>
+          <tr>
+            <th width="100">{:L('init_function')}:</th>
+            <td><input type="text" name="init_function" id="init_function" class="input-text" value="{$node.init_function}" >               </td>
+          </tr>		
+          <tr>
+            <th width="100">{:L('run_function')}:</th>
+            <td><input type="text" name="run_function" id="run_function" class="input-text" value="{$node.run_function}" >            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('save_function')}:</th>
+            <td><input type="text" name="save_function" id="save_function" class="input-text"  value="{$node.save_function}">            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('transit_function')}:</th>
+            <td><input type="text" name="transit_function" id="transit_function" class="input-text"  value="{$node.transit_function}">            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('prev_node_index')}:</th>
+            <td><input type="text" name="prev_node_index" id="prev_node_index" class="input-text"  value="{$node.prev_node_index}">            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('next_node_index')}:</th>
+            <td><input type="text" name="next_node_index" id="next_node_index" class="input-text"  value="{$node.next_node_index}">            </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('executor')}:</th>
+            <td><input type="text" name="executor" id="executor" class="input-text" value="{$node.executor}" >            </td>
+          </tr>		
+          <tr>
+            <th width="100">{:L('execute_type')}:</th>
+            <td>
+			<select name="execute_type" id="execute_type" >	
+			<option value="-1">--请选择分类--</option>
+              <option value="0" <if condition="$node.remind eq 0">  selected="selected"</if>>需要所有人执行</option>
+			  <option value="1" <if condition="$node.remind eq 1">  selected="selected"</if>>只需要一人执行</option>
+            </select>
+           </td>
+          </tr>	
+          <tr>
+            <th width="100">{:L('remind')}:</th>
+            <td>  
+			<select name="remind" id="remind" >	
+			<option value="-1">--请选择分类--</option>
+              <option value="0" <if condition="$node.remind eq 0">  selected="selected"</if>>不提醒</option>
+			  <option value="1" <if condition="$node.remind eq 1">  selected="selected"</if>>邮件提醒</option>
+              <option value="2" <if condition="$node.remind eq 2">  selected="selected"</if>>短信提醒</option>
+              <option value="3" <if condition="$node.remind eq 3">  selected="selected"</if>>邮件短信提醒</option>
+            </select>
+			 </td>
+          </tr>	  	
+          <tr>
+            <th width="100">{:L('field')}:</th>
+            <td><input type="text" name="field" id="field" class="input-text"  value="{$node.field}">            </td>
+          </tr>	
+		  <tr>
+            <th width="100">{:L('max_day')}:</th>
+            <td><input type="text" name="max_day" id="max_day" class="input-text"  value="{$node.max_day}">            </td>
+          </tr>
+      <tr>
+        <th>{:L('status')} :</th>
+        <td><input type="radio" name="status" class="radio_style" value="1" <if condition="$node.status eq 1"> checked</if>>
+          &nbsp;已审核&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="status" class="radio_style" value="0" <if condition="$node.status eq 0">  checked</if>>
+          &nbsp;未审核          </td>
+      </tr>
+      <tr><td><input type="hidden" name="node_id" value="{$node.node_id}" id="node_id"/></td></tr>
+    </table>
+  </div>
+
+  <div class="bk15"></div>
+  <div class="btn">
+    <input type="submit" value="{$Think.lang.submit}" name="dosubmit" onclick="return submitFrom();" class="button" id="dosubmit">
+  </div>
+
+</div>
+</div>
+</form>
+<script type="text/javascript">
+function SwapTab(name,cls_show,cls_hide,cnt,cur){
+    for(i=1;i<=cnt;i++){
+		if(i==cur){
+			 $('#div_'+name+'_'+i).show();
+			 $('#tab_'+name+'_'+i).attr('class',cls_show);
+		}else{
+			 $('#div_'+name+'_'+i).hide();
+			 $('#tab_'+name+'_'+i).attr('class',cls_hide);
+		}
+	}
+}
+function submitFrom(){
+	if($("#cate_id").val()==0)
+	{
+	   alert('请选择文章分类');
+	   return false;
+	}
+
+}
+</script>
+</body>
+</html>

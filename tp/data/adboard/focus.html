@@ -1,0 +1,14 @@
+$(function(){
+	$("#KinSlideshow").KinSlideshow({
+    	titleBar:{titleBar_height:30,titleBar_alpha:0.5}
+    });
+});
+var str = "";
+var str = "<div id='KinSlideshow' style='visibility:hidden;'>";
+<volist name="ad_list" id="ad">
+str += "<a href='{:u(\'Advert/click\',array(\'id\'=>$ad['id']))}' target='_blank'>";
+str += "<img alt='{$ad.name}' src='__ROOT__/data/advert/{$ad.code}' width='{$board_info.width}' height='{$board_info.height}' />";
+str += "</a>";
+</volist>
+str += "</div>";
+document.write(str);

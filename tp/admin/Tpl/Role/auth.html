@@ -1,0 +1,63 @@
+<include file="Public:header" />
+<script language="javascript">
+$(document).ready(function(){					   
+	function is_all_checked(input){ 
+		var flag=false;
+		input.each(function(){ 		
+			flag=$(this).attr('checked');
+			if(!flag)return false;
+		});
+		return flag;
+	}
+	var table_form=$('.table_form');
+	$('tr',table_form).each(function(){ 
+		var td_1_input=$("td:nth-child(1) input[type='checkbox']",this);
+		var td_2_input=$("td:nth-child(2) input[type='checkbox']",this);
+		
+		td_1_input.attr('checked',is_all_checked(td_2_input));			  
+		
+		td_1_input.click(function(){ 
+			td_2_input.attr('checked',td_1_input.attr('checked'));
+		});
+		
+		td_2_input.click(function(){ 
+			td_1_input.attr('checked',is_all_checked(td_2_input));			  
+		});
+	});
+});
+
+</script>
+
+<div style="padding: 10px;">
+    <form action="{:u('Role/authSubmit')}" method="post" name="myform" id="myform">
+        <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+            <foreach name="access_list" item="module_item">
+                <tr>
+                    <td align="right" style="background: #D8E2FA; padding-right: 10px; width: 150px;">
+                    	<label>
+                        	<input type="checkbox" class="module_cbo" value="{$module_item.id}" name="access_node[]"/>&nbsp;&nbsp;
+                                {$module_item.module_name}
+                       	</label>
+                	</td>
+                    <td>
+                    	<foreach name="module_item.actions" item="action_item"> &nbsp;&nbsp;
+                            <label>
+                            	<input type="checkbox" class="action_cbo" value="{$action_item.id}" name="access_node[]"
+                                	<if condition="$action_item['checked']">checked="checked"</if>
+                                />
+                                &nbsp;&nbsp;{$action_item.action_name}
+                   			</label>
+                        </foreach>
+                        &nbsp;
+              		</td>
+                </tr>
+            </foreach>
+        </table>
+        <div class="bk15"></div>
+        <input type="hidden" name="id" value="{$id}" />
+        <div class="btn">
+            <input type="submit" value="{$Think.lang.submit}" name="dosubmit" class="button" id="dosubmit"/>
+        </div>
+    </form>
+</div>
+</body></html>

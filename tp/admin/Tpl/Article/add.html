@@ -1,0 +1,129 @@
+<tagLib name="tpl" />
+<include file="Public:header" />
+<script type="text/javascript">		
+$(function(){
+	$("#add_attatch").click(function(){
+	$("#attatch_tr").clone().prependTo($("#attatch_tr").parent());
+	});
+})
+</script>
+<form action="{:u('Article/add')}" method="post" name="myform" id="myform"  enctype="multipart/form-data" style="margin-top:10px;">
+  <div class="pad-10">
+    <div class="col-tab">
+      <ul class="tabBut cu-li">
+        <li id="tab_setting_1" class="on" onclick="SwapTab('setting','on','',2,1);">{$Think.lang.general_info}</li>
+        <li id="tab_setting_2" onclick="SwapTab('setting','on','',2,2);">{$Think.lang.article_seo}</li>
+      </ul>
+      <div id="div_setting_1" class="contentList pad-10">
+        <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+          <tr>
+            <th width="100">{:L('title')}:</th>
+            <td><input type="text" name="title" id="title" class="input-text" size="60"></td>
+          </tr>
+		  <tr>
+            <th width="100">{:L('url')}:</th>
+            <td><input type="text" name="url" id="url" class="input-text" size="60"></td>
+          </tr>
+          <tr>
+            <th>{:L('cate_id')}:</th>
+            <td><select name="cate_id" id="cate_id" style="width:200px;">
+            	<option value="0">--请选择分类--</option>
+                <volist name="cate_list['parent']" id="val">
+                  <option value="{$val.id}">{$val.name}</option>
+                  <notempty name="cate_list['sub'][$val['id']]">
+                    <volist name="cate_list['sub'][$val['id']]" id="sval">
+                      <option value="{$sval.id}">&nbsp;&nbsp;&nbsp;&nbsp;{$sval.name}</option>
+                      <notempty name="cate_list['sub'][$sval['id']]">
+                        <volist name="cate_list['sub'][$sval['id']]" id="ssval">
+                          <option value="{$ssval.id}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$ssval.cate_name}</option>
+                        </volist>
+                      </notempty>
+                    </volist>
+                  </notempty>
+                </volist>
+              </select></td>
+          </tr>
+          <tr>
+          	<th>{:L('orig')} :</th>
+            <td><input type="text" name="orig" id="orig" class="input-text" size="30"></td>
+          </tr>
+          <tr>
+          	<th>{:L('img')} :</th>
+            <td><input type="file" name="img" id="img" class="input-text"  style="width:200px;" /></td>
+          </tr>
+          <tr>
+            <th>{:L('abst')} :</th>
+            <td><textarea name="abst" id="abst" style="width:68%;height:50px;"></textarea></td>
+          </tr>
+           <tr>
+            <th>{:L('info')} :</th>
+            <td>            	
+				<tpl:editor id="info" name="info" type="KINDEDITOR" style="width:70%;height:350px;" ></tpl:editor>
+			</td>
+          </tr>
+          <tr>
+            <th>{:L('ordid')} :</th>
+            <td><input type="text" name="ordid" id="ordid" class="input-text" size="8"></td>
+          </tr>
+          <tr>
+        	<th>{:L('is_hot')}:</th>
+        	<td>
+            	<input type="checkbox" name="is_hot" id="is_hot" value="1"> &nbsp;热门&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="is_best" id="is_best" value="1"> &nbsp;推荐&nbsp;&nbsp;&nbsp;
+            </td>
+          </tr>
+         <tr>
+            <th>{:L('status')} :</th>
+            <td><input type="radio" name="status" class="radio_style" value="1">
+              &nbsp;已审核&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="status" class="radio_style" value="0" checked="checked">
+              &nbsp;待审核
+              </td>
+          </tr>
+        </table>
+      </div>
+      
+      <div id="div_setting_2" class="contentList pad-10 hidden">
+        <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+          <tr>
+            <th width="100">{$Think.lang.seo_title} :</th>
+            <td><input type="text" name="seo_title" id="seo_title" class="input-text" size="60"></td>
+          </tr>
+          <tr>
+            <th>{$Think.lang.seo_keys} :</th>
+            <td><input type="text" name="seo_keys" id="seo_keys" class="input-text" size="60"></td>
+          </tr>
+          <tr>
+            <th>{$Think.lang.seo_desc} :</th>
+            <td><textarea name="seo_desc" id="seo_desc" cols="80" rows="8"></textarea></td>
+          </tr>
+        </table>
+      </div>
+      <div class="bk15"></div>
+      <div class="btn"><input type="submit" value="{$Think.lang.submit}" onclick="return submitFrom();" name="dosubmit" class="button" id="dosubmit"></div>
+    </div>
+  </div>
+</form>
+<script type="text/javascript">
+function SwapTab(name,cls_show,cls_hide,cnt,cur){
+    for(i=1;i<=cnt;i++){
+		if(i==cur){
+			 $('#div_'+name+'_'+i).show();
+			 $('#tab_'+name+'_'+i).attr('class',cls_show);
+		}else{
+			 $('#div_'+name+'_'+i).hide();
+			 $('#tab_'+name+'_'+i).attr('class',cls_hide);
+		}
+	}
+}
+
+function submitFrom(){
+	if($("#cate_id").val()==0)
+	{
+	   alert('请选择文章分类');
+	   return false;
+	}
+
+}
+</script>
+</body></html>

@@ -1,0 +1,70 @@
+<include file="Public:header" />
+<div class="pad-lr-10">
+  <div style="padding:10px; overflow:hidden;">
+		<div class="main_top" style="clear:both;">
+			<h4>温馨提示：</h4>						
+			<p class="green">1.使用说明,调用指定位置的广告时把id换为下面列表中的id即可</p>	
+			<p><span><</span><span>script </span><span>language="javascript" src="{:u('Advert/index', array('id'=>6))}"></<span>script</span>></span></span>									
+		</div>
+  </div>
+  <form id="myform" name="myform" action="{:u('Adboard/delete')}" method="post" onsubmit="return check();">
+    <div class="table-list">
+      <table width="100%" cellspacing="0">
+        <thead>
+			<tr>
+          		<th width=50>ID</th>
+				<th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>				
+				<th width=150>广告位名称</th>
+				<th width=150>广告位尺寸</th>
+				<th width=200>说明</th>
+				<th width="60">状态</th>
+				<th width="60">操作</th>
+			</tr>
+        </thead>
+		<tbody>
+			<volist name="adboard_list" id="val" key="key">
+			<tr>
+				<td align="center">{$val.id}</td>
+				<td align="center"><input type="checkbox" value="{$val.id}" name="id[]"></td>				
+				<td align="center">{$val.name}</td>
+				<td align="center">{$val.width}*{$val.height}</td>
+				<td>{$val.description}</td>
+				<td align="center">
+					<if condition="$val.status eq 1"><font class="green">开启</font>
+					<else /><font color="red">关闭</font>
+					</if></td>
+				<td align="center"><a class="blue" href="javascript:edit({$val.id},'{$val.name}')">编辑</a></td>
+			</tr>
+			</volist>
+        </tbody>
+		</table>
+        <div class="btn">
+			<label for="check_box">{$Think.lang.select_all}/{$Think.lang.cancel}</label>
+			<input type="submit" class="button" name="dosubmit" value="{$Think.lang.delete}" onclick="return confirm('{$Think.lang.sure_delete}')"/>
+			<div id="pages">{$page}</div>
+		</div>		  
+	</div>
+	</form>
+	</div>
+	<script type="text/javascript">
+	function edit(adboard_id, name) {
+		var lang_edit = "{$Think.lang.edit}";
+		window.top.art.dialog({id:'edit'}).close();
+		window.top.art.dialog({title:lang_edit+'--'+name,id:'edit',iframe:'?m=Adboard&a=edit&id='+adboard_id,width:'600',height:'300'}, function(){var d = window.top.art.dialog({id:'edit'}).data.iframe;d.document.getElementById('dosubmit').click();return false;}, function(){window.top.art.dialog({id:'edit'}).close()});
+	}
+	var lang_cate_name = "{$Think.lang.cate_name}";
+	function check(){
+		var ids='';
+		$("input[name='id[]']:checked").each(function(i, n){
+			ids += $(n).val() + ',';
+		});
+
+		if(ids=='') {
+			window.top.art.dialog({content:lang_please_select+lang_cate_name,lock:true,width:'200',height:'50',time:1.5},function(){});
+			return false;
+		}
+		return true;
+	}
+	</script>
+</body>
+</html>

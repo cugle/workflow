@@ -1,0 +1,95 @@
+<include file="Public:header" />
+<div class="pad-10" >
+    <form name="searchform" action="" method="get" >
+    <table width="100%" cellspacing="0" class="search-form">
+        <tbody>
+            <tr>
+            <td>
+            <div class="explain-col">
+				关键字 :
+                <input name="keyword" type="text" class="input-text" size="25" value="{$keyword}" />
+                <input type="hidden" name="m" value="user" />
+                <input type="submit" name="search" class="button" value="搜索" />
+        	</div>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+    <form id="myform" name="myform" action="{:u('User/delete')}" method="post" onsubmit="return check();">
+    <div class="table-list">
+    <table width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th width="50">ID</th>
+                <th width=15><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
+                <th width=80>{:L('name')}</th>
+				<th width=80>{:L('email')}</th>							
+				<th width=40>{:L('integral')}</th>					
+				<th width=60>{:L('sex')}</th>
+				<th width=60>登录次数</th> 
+                <th width=80>{:L('reg_time')}</th>
+                <th width=80>{:L('last_time')}</th>				
+                <th width=30>{:L('status')}</th>
+				<th width=30>{:L('operational')}</th>
+            </tr>
+        </thead>
+    	<tbody>
+        <volist name="list" id="val" key="k">
+        <tr>
+        	<td align="center">{$val.id}</td>
+            <td align="center"><input type="checkbox" value="{$val.id}" name="id[]"></td>
+            <td align="center"><a href="javascript:edit({$val.id},'{$val.name}')"><em class="blue">{$val.name}</em></a></td>		   
+		 	<td  align="center">{$val.email}</td>
+		    <td  align="center">{$val.integral}</td>
+		    <td align="center">
+	           <if condition="$val.sex eq '0'">
+	           男
+	           <elseif condition="$val.sex eq '1'"/>
+	           女
+	           <else/>
+	           保密
+	           </if>
+           </td>			
+		   <td  align="center">{$val.login_count}</td>
+           <td align="center">{:date("Y-n-j   H:i:s",$val["add_time"])}<br>
+              <font color=green>({$val.ip})</font></td>
+		   <td align="center">{:date("Y-n-j   H:i:s",$val["last_time"])}<br><font color=green>({$val.last_ip})</font></td>
+           <td align="center" onclick="status({$val.id},'status')" id="status_{$val.id}"><img src="__ROOT__/statics/images/status_{$val.status}.gif" /></td>
+		   <td align="center"><a href="javascript:edit({$val.id},'{$val.name}')">编辑</a></td>
+        </volist>
+    	</tbody>
+    </table>
+    <div class="btn">
+    	<label for="check_box" style="float:left;">全选/取消</label>
+    	<input type="submit" class="button" name="dosubmit" value="{$Think.lang.delete}" onclick="return confirm('{$Think.lang.sure_delete}')" style="float:left;margin:0 10px 0 10px;"/>
+    	<div id="pages">{$page}</div>
+    </div>
+    </div>
+    </form>
+</div>
+
+<script language="javascript">
+function edit(id, name) {
+	var lang_edit = "{$Think.lang.edit}";
+	window.top.art.dialog({id:'edit'}).close();
+	window.top.art.dialog({title:lang_edit+'--'+name,id:'edit',iframe:'?m=User&a=edit&id='+id,width:'520',height:'400'}, 
+		function(){
+			var d = window.top.art.dialog({id:'edit'}).data.iframe;
+			d.document.getElementById('dosubmit').click();
+			return false;
+		}, 
+		function(){
+			window.top.art.dialog({id:'edit'}).close();
+		}
+	);
+}
+function status(id,type){
+    $.get("{:u('User/status')}", { id: id, type: type }, function(jsondata){
+		var return_data  = eval("("+jsondata+")");
+		$("#"+type+"_"+id+" img").attr('src', '__ROOT__/statics/images/status_'+return_data+'.gif')
+	}); 
+}
+</script>
+</body>
+</html>

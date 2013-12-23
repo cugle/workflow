@@ -1,0 +1,98 @@
+<tagLib name="tpl" />
+<include file="Public:header" />
+<script type="text/javascript">	
+$(function(){
+	$("#add_attatch").click(function(){
+		$("#attatch_tr").clone().prependTo($("#attatch_tr").parent());
+	});
+	$(".delete_attatch").click(function(){
+		var article_id = $("#article_id").val();
+		var aid = $(this).attr('aid');
+		$.get("admin.php?m=article&a=delete_attatch&id="+article_id+"&aid="+aid, function(data){
+			$("#list_"+aid).hide();
+		});
+	});
+})
+</script>
+
+<form action="{:u('WFDefination/edit')}" method="post" name="myform" id="myform" enctype="multipart/form-data" style="margin-top:10px;">
+  <div class="pad-10">
+  <div class="col-tab">
+  <ul class="tabBut cu-li">
+    <li id="tab_setting_1" class="on" onclick="SwapTab('setting','on','',2,1);">{$Think.lang.general_info}</li>
+  </ul>
+  <div id="div_setting_1" class="contentList pad-10">
+    <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+      <tr>
+        <th width="100">{:L('title')} :</th>
+        <td><input type="text" name="defination_name" id="defination_name" class="input-text" size="60" value="{$defination.defination_name}"></td>
+      </tr>
+      <tr>
+        <th>{:L('cate_id')} :</th>
+        <td><select name="defination_cate_id" id="defination_cate_id" style="width:200px;">
+        	<option value="0">--请选择分类--</option>
+            <volist name="defination_cate_list['parent']" id="val">
+              <option  <if condition="$defination['defination_cate_id'] eq $val['defination_cate_id']"> selected="selected" </if> value="{$val.defination_cate_id}">{$val.defination_cate_name}</option>
+              <notempty name="defination_cate_list['sub'][$val['defination_cate_id']]">
+                <volist name="defination_cate_list['sub'][$val['defination_cate_id']]" id="sval">
+                  <option <if condition="$defination['defination_cate_id'] eq $sval['defination_cate_id']"> selected="selected" </if> value="{$sval.defination_cate_id}">&nbsp;&nbsp;&nbsp;&nbsp;{$sval.defination_cate_name}</option>
+                  <notempty name="defination_cate_list['sub'][$sval['defination_cate_id']]">
+                    <volist name="defination_cate_list['sub'][$sval['defination_cate_id']]" id="ssval">
+                      <option <if condition="$defination['defination_cate_id'] eq $ssval['defination_cate_id']"> selected="selected" </if> value="{$ssval.defination_cate_id}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$ssval.defination_cate_name}</option>
+                    </volist>
+                  </notempty>
+                </volist>
+              </notempty>
+            </volist>
+          </select></td>
+      </tr>
+	  
+
+		  	  
+      <tr>
+        <th>{:L('handler')} :</th>
+        <td><textarea name="defination_handler" id="defination_handler" style="width:68%;height:50px;">{$defination.defination_handler}</textarea></td>
+      </tr>
+      <tr>
+        <th>{:L('status')} :</th>
+        <td><input type="radio" name="status" class="radio_style" value="1" <if condition="$defination.status eq 1"> checked</if>>
+          &nbsp;已审核&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="status" class="radio_style" value="0" <if condition="$defination.status eq 0">  checked</if>>
+          &nbsp;未审核
+          </td>
+      </tr>
+      <tr><td><input type="hidden" name="defination_id" value="{$defination.defination_id}" id="defination_id"/></td></tr>
+    </table>
+  </div>
+
+  <div class="bk15"></div>
+  <div class="btn">
+    <input type="submit" value="{$Think.lang.submit}" name="dosubmit" onclick="return submitFrom();" class="button" id="dosubmit">
+  </div>
+
+</div>
+</div>
+</form>
+<script type="text/javascript">
+function SwapTab(name,cls_show,cls_hide,cnt,cur){
+    for(i=1;i<=cnt;i++){
+		if(i==cur){
+			 $('#div_'+name+'_'+i).show();
+			 $('#tab_'+name+'_'+i).attr('class',cls_show);
+		}else{
+			 $('#div_'+name+'_'+i).hide();
+			 $('#tab_'+name+'_'+i).attr('class',cls_hide);
+		}
+	}
+}
+function submitFrom(){
+	if($("#cate_id").val()==0)
+	{
+	   alert('请选择文章分类');
+	   return false;
+	}
+
+}
+</script>
+</body>
+</html>

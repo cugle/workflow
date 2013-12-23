@@ -1,0 +1,60 @@
+<include file="Public:header" />
+<div class="pad_10">
+    <form action="{:u('Node/add')}" method="post" name="myform" id="myform">
+        <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+            <tr>
+                <th width="100">{:L('module')} :</th>
+                <td><input type="text" name="module" id="module" class="input-text"></td>
+            </tr>
+            <tr>
+                <th>{:L('module_name')}  :</th>
+                <td><input type="text" name="module_name" id="module_name" class="input-text"></td>
+            </tr>
+            <tr>
+                <th>{:L('action')} :</th>
+                <td><input type="text" name="action" id="action" class="input-text"></td>
+            </tr>
+            <tr>
+                <th>{:L('action_name')} :</th>
+                <td><input type="text" name="action_name" id="action_name" class="input-text"></td>
+            </tr>
+            <tr>
+                <th>{:L('auth_type')} :</th>
+                <td><select name="auth_type">
+                        <option value="0">模块</option>
+                        <option value="1">菜单</option>
+                        <option value="2">操作</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th>{:L('group_id')} :</th>
+                <td><select name="group_id">
+                        <volist name="group_list" id="val" >
+                            <option value="{$val.id}">{$val.title}</option>
+                        </volist>
+                    </select></td>
+            </tr>
+            <tr>
+                <th>{:L('data')} :</th>
+                <td><input type="text" name="data" id="data" class="input-text"></td>
+            </tr>
+            <tr>
+                <th>{:L('sort')} :</th>
+                <td><input type="text" name="sort" id="sort" class="input-text" onkeyup="value=value.replace(/[^\d]/g,'')"onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"></td>
+            </tr>
+            <tr>
+                <th>{:L('remark')} :</th>
+                <td><textarea name="remark" cols="40" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <th>{:L('status')} :</th>
+                <td><input type="radio" name="status" class="radio_style" value="1" checked="checked" >
+                    &nbsp;有效&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="status" class="radio_style" value="0">
+                    &nbsp;禁用 </td>
+            </tr>
+        </table>
+        <input type="submit" name="dosubmit" id="dosubmit" class="dialog" value=" ">
+    </form>
+</div>
+</body></html>

@@ -1,0 +1,23 @@
+<script type="text/javascript">
+function check(){
+	if($("#myform").attr('action') == '{:u(MODULE_NAME."/delete")}') {
+		var ids='';
+		$("input[name='id[]']:checked").each(function(i, n){
+			ids += $(n).val() + ',';
+		});
+		if(ids=='') {
+			window.top.art.dialog({content:lang_please_select,lock:true,width:'200',height:'50',time:1.5},function(){});
+			return false;
+		}
+	}
+	return true;
+}
+function status(id,type){
+    $.get("{:u(MODULE_NAME.'/status')}", { id: id, type: type }, function(jsondata){
+		var return_data  = eval("("+jsondata+")");
+		$("#"+type+"_"+id+" img").attr('src', '__ROOT__/statics/images/status_'+return_data+'.gif');
+	}); 
+}
+</script>
+</body>
+</html>

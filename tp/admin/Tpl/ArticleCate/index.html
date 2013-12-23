@@ -1,0 +1,96 @@
+<include file="Public:header" />
+<script language="javascript" type="text/javascript" src="__ROOT__/statics/js/jquery/jquery.article_cate.js"></script>
+<div class="pad-lr-10" >
+    <form id="myform" name="myform" action="{:u('ArticleCate/delete')}" method="post" onsubmit="return check();">
+    <div class="table-list">
+    <table width="100%" cellspacing="0">
+        <thead>
+            <tr>
+            	<th width="50">{:L('id')}</th> 
+                <th width="4%"><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
+              	<th width="250">{:L('name')}</th>
+				<th width="80">{:L('alias')}</th>              	
+                <th align="left">SEO Title</th>               
+              	<th width="80">{:L('artile_num')}</th>               
+              	<th width="60">{:L('sort')}</th>
+                <th width="60">{:L('status')}</th>
+                <th width="40">操作</th>
+            </tr>
+        </thead>
+    	<tbody>
+        <volist name="article_cate_list['parent']" id='val'>
+        <tr>
+        	<td align="center">{$val.id}</td>
+            <td align="center"><input type="checkbox" value="{$val.id}" name="id[]"></td>
+            <td>&nbsp;&nbsp;<img src="__ROOT__/statics/admin/images/tv-expandable.gif" />&nbsp;&nbsp;{$val.name}</td>
+			<td align="center"><em style="color:blue;">{$val.alias}<em style="color:red;"></td>            
+            <td align="left">{$val.seo_title}</td>
+			<td align="center"><em style="color:red;">{$val.article_nums}</em></td>
+            <td align="center"><input type="text" class="input-text-c input-text" value="{$val.sort_order}" id="sort_{$val.id}" onblur="sort({$val.id},'sort_order',this.value)" size="4" name="listorders[{$val.id}]"></td>
+            <td align="center" onclick="status({$val.id},'status')" id="status_{$val.id}"><img src="__ROOT__/statics/images/status_{$val.status}.gif"</td>
+            <td align="center"><a class="blue" href="javascript:edit({$val.id},'{$val.name}')">{$Think.lang.edit}</a></td>
+        </tr>
+        	<volist name="article_cate_list['sub'][$val['id']]" id='sval'>
+        	<tr>
+        		<td align="center">{$sval.id}</td>
+                <td align="center"><input type="checkbox" value="{$sval.id}" name="id[]"></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="__ROOT__/statics/admin/images/tv-collapsable.gif" />&nbsp;&nbsp;{$sval.name}</td>
+				<td align="center"><em style="color:blue;">{$sval.alias}<em style="color:red;"></td>                
+                <td align="left">{$sval.seo_title}</td>
+				<td align="center"><em style="color:red;">{$sval.article_nums}</em></td>
+                <td align="center"><input type="text" class="input-text-c input-text" value="{$sval.sort_order}" id="sort_{$sval.id}" onblur="sort({$sval.id},'sort_order',this.value)" size="4" name="listorders[{$sval.id}]"></td>
+                <td align="center" onclick="status({$sval.id},'status')" id="status_{$sval.id}"><img src="__ROOT__/statics/images/status_{$sval.status}.gif"</td>
+				<td align="center"><a class="blue" href="javascript:edit({$sval.id},'{$sval.name}')">{$Think.lang.edit}</a></td>
+            </tr>
+        	</volist>
+        </volist>
+    	</tbody>
+    </table>
+
+    <div class="btn">
+    <label for="check_box">{$Think.lang.select_all}/{$Think.lang.cancel}</label>
+    <input type="submit" class="button" name="dosubmit" value="{$Think.lang.delete}" onclick="return confirm('{$Think.lang.sure_delete}')"/>
+    
+    </div>
+
+    </div>
+    </form>
+</div>
+<script type="text/javascript">
+function edit(id, name) {
+	var lang_edit = "{$Think.lang.edit}";
+	window.top.art.dialog({id:'edit'}).close();
+	window.top.art.dialog({title:lang_edit+'--'+name,id:'edit',iframe:'?m=ArticleCate&a=edit&id='+id,width:'500',height:'420'}, function(){var d = window.top.art.dialog({id:'edit'}).data.iframe;d.document.getElementById('dosubmit').click();return false;}, function(){window.top.art.dialog({id:'edit'}).close()});
+}
+var lang_cate_name = "{$Think.lang.article_cate_name}";
+function check(){
+	if($("#myform").attr('action') != '{:u("ArticleCate/sort_order")}') {
+		var ids='';
+		$("input[name='id[]']:checked").each(function(i, n){
+			ids += $(n).val() + ',';
+		});
+
+		if(ids=='') {
+			window.top.art.dialog({content:lang_please_select+lang_cate_name,lock:true,width:'200',height:'50',time:1.5},function(){});
+			return false;
+		}
+	}
+	return true;
+}
+function status(id,type){
+    $.get("{:u('ArticleCate/status')}", { id: id, type: type }, function(jsondata){
+		var return_data  = eval("("+jsondata+")");
+		$("#"+type+"_"+id+" img").attr('src', '__ROOT__/statics/images/status_'+return_data+'.gif')
+	}); 
+}
+//排序方法
+function sort(id,type,num){
+    
+    $.get("{:u('ArticleCate/sort')}", { id: id, type: type,num:num }, function(jsondata){
+        
+		$("#"+type+"_"+id+" ").attr('value', jsondata);
+	},'json'); 
+}
+</script>
+</body>
+</html>

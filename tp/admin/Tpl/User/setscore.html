@@ -1,0 +1,30 @@
+<include file="public:header" />
+<form id="myform" name="myform" action="{:u('user/setscore')}" method="post">
+  <div class="pad-10">
+          <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+            <tr>
+              <th width="100">每天登陆送积分 :</th>
+              <td><input type="text" name="user_login_score"　　 size="40" value="{$setscore.user_login_score}"></td>
+            </tr>
+            <tr>
+              <th >注册送积分 :</th>
+              <td><input type="text" name="user_register_score" size="40" value="{$setscore.user_register_score}"></td>
+            </tr>
+            <tr>
+              <th>发布商品送积分 :</th>
+              <td><input type="text" name="share_goods_score"  size="40" value="{$setscore.share_goods_score}"></td>
+            </tr>
+            <!--tr>
+              <th>删除商品扣积分 :</th>
+              <td><input type="text" name="delete_share_goods_score" size="40" value="{$setscore.delete_share_goods_score}"></td>
+            </tr-->
+        </table>
+
+      <div class="bk15"></div>
+
+      <div class="btn"><input type="submit" value="{$Think.lang.submit}" onclick="return submitFrom();" name="dosubmit" class="button" id="dosubmit"></div>
+
+    </div>
+  </div>
+</form>
+</body></html>

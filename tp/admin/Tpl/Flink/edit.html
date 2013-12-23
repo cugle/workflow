@@ -1,0 +1,60 @@
+<include file="Public:header" />
+<div class="pad_10">
+    <form action="{:u('Flink/edit')}" method="post" name="myform" id="myform" enctype="multipart/form-data" >
+        <input type="hidden" name="id" value="{$flink_info.id}" />
+        <table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+            <tr>
+                <th>{:L('cate_id')} :</th>
+                <td><select name="cate_id" style="width:140px;">
+                        <volist name="flink_cate_list" id="val" > <option value="{$val.id}" 
+                            <if condition="$flink_info['cate_id'] eq $val['id']"> selected="selected"</if>
+                            >{$val.name}
+                            </option>
+                        </volist>
+                    </select></td>
+            </tr>
+            <tr>
+                <th width="60">{:L('name')}: </th>
+                <td><input type="text" name="name" id="name" size="25" value="{$flink_info.name}" ></td>
+            </tr>
+            <tr>
+                <th>{:L('url')}:</th>
+                <td><input type="text" name="url" id="url" size="25" value="{$flink_info.url}"  ></td>
+            </tr>
+           <!--
+		    <tr>
+                <th>{:L('img')}:</th>
+                <td>
+                	<if condition="$flink_info['img'] neq ''">
+                    	<img src="__ROOT__/data/flink/{$flink_info.img}" width="150px"/>
+                    </if>
+                	<input type="file" name="img" id="img"/>                        
+               	</td>
+            </tr>
+		   -->
+            <tr>
+                <th>{:L('ordid')} :</th>
+                <td><input type="text" name="ordid" id="ordid" class="input-text" value="{$flink_info.ordid}" size=8 onkeyup="value=value.replace(/[^\d]/g,'')"onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"></td>
+            </tr>
+            <tr>
+                <th>{:L('status')} :</th>
+                <td><input type="radio" name="status" value="1" 
+                    <if condition="$flink_info.status eq 1"> checked</if>
+                    >&nbsp;已审核&nbsp;&nbsp;&nbsp; <input type="radio" name="status" value="0" 
+                    <if condition="$flink_info.status eq 0"> checked</if>
+                    >&nbsp;未审核</td>
+            </tr>
+        </table>
+        <input type="submit" name="dosubmit" id="dosubmit" class="dialog" value="">
+    </form>
+    <script type="text/javascript">
+	$(function(){
+		$.formValidator.initConfig({formid:"myform",autotip:true,onerror:function(msg,obj){window.top.art.dialog({content:msg,lock:true,width:'250',height:'50'}, function(){this.close();$(obj).focus();})}});
+		
+		$("#name").formValidator({onshow:"不能为空",onfocus:"不能为空"}).inputValidator({min:1,onerror:"请填写链接名称"});
+		
+		$("#url").formValidator({onshow:"不能为空",onfocus:"http开头"}).inputValidator({min:1,onerror:"请填写链接地址"});
+	})
+</script>
+</div>
+</body></html>

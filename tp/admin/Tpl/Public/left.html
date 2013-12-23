@@ -1,0 +1,23 @@
+<volist name="menu" id="item">
+<h3 class="f14"><span class="switchs cu on" title="{$lang.expand_or_contract}"></span>{$item.name}</h3>
+<ul>
+	<volist id="nav" name="item['navs']" >
+    	<li id="_MP{$nav.id}" class="sub_menu"><a href="javascript:_MP({$nav.id},'{$nav.url}');" hidefocus="true" style="outline:none;">{$nav.action_name}</a></li>
+	</volist>
+</ul>
+</volist>
+<script type="text/javascript">
+$(".switchs").each(function(i){
+	var ul = $(this).parent().next();
+	$(this).click(
+	function(){
+		if(ul.is(':visible')){
+			ul.hide();
+			$(this).removeClass('on');
+				}else{
+			ul.show();
+			$(this).addClass('on');
+		}
+	})
+});
+</script>

@@ -1,0 +1,32 @@
+<include file="Public:header" />
+<form id="myform" name="myform" action="{:u('Setting/edit')}" method="post">
+  <div class="pad-10">
+      	<table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+            <tr>
+              <th width="100">新浪微博:</th>
+              <td>
+                App key:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="site[sina_app_key]" value="{$set.sina_app_key}"/><br/><br/>
+                App Secret:&nbsp;&nbsp;<input type="text" name="site[sina_app_Secret]" value="{$set.sina_app_Secret}" size="50"/><br/>
+              </td>
+            </tr>
+            <tr>
+              <th>腾讯QQ:</th>
+              <td>
+                App key:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="site[qq_app_key]" value="{$set.qq_app_key}"/><br/><br/>
+                App Secret:&nbsp;&nbsp;<input type="text" name="site[qq_app_Secret]" value="{$set.qq_app_Secret}" size="50"/><br/>
+              </td>
+            </tr>
+            <tr>
+              <th>说明:</th>
+              <td>
+                微博账号填写以后，首页将自动显示微博登陆按钮。<br/>
+                新浪开放平台申请地址：<a href="http://open.weibo.com/connect" target="_blank">http://open.weibo.com/connect</a><br/>
+                腾讯开放平台申请地址：<a href="http://connect.opensns.qq.com/" target="_blank">http://connect.opensns.qq.com/</a><br/>
+              </td>
+            </tr>
+         </table>
+      <div class="bk15"></div>
+      <div class="btn"><input type="submit" value="{$Think.lang.submit}" onclick="return submitFrom();" name="dosubmit" class="button" id="dosubmit"></div>
+  </div>
+</form>
+</body></html>

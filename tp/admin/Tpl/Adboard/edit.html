@@ -1,0 +1,46 @@
+<include file="Public:header" />
+<div class="pad_10">
+<form action="{:u('Adboard/edit')}" method="post" name="myform" id="myform" >
+<table width="100%" cellpadding="2" cellspacing="1" class="table_form">
+	<tr> 
+		<th width="80">广告位名称 :</th>
+		<td><input type="text" name="name" id="name" class="input-text" size="30" value="{$adboard.name}"></td>
+    </tr>
+    <tr> 
+		<th width="80">广告位类型 :</th>
+		<td><select name="type">
+				<volist name="adboard_types" id="val">
+				<option value="{$val.alias}" <if condition="$val['alias'] eq $adboard['type']" >selected="selected"</if>>{$val.name}</option>
+				</volist>
+			</select> 
+		</td>
+    </tr>
+    <tr> 
+		<th>广告位尺寸 :</th>
+		<td>宽 : <input type="text" name="width" id="width" class="input-text" size="6" value="{$adboard.width}" onkeyup="value=value.replace(/[^\d]/g,'')"onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"> px&nbsp;&nbsp;&nbsp;&nbsp;高 : <input type="text" name="height" id="height" class="input-text" size="6" value="{$adboard.height}" onkeyup="value=value.replace(/[^\d]/g,'')"onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"></td>
+    </tr>
+    <tr> 
+		<th>广告位说明 :</th>
+		<td><textarea rows="4" cols="45" class="input-textarea" id="description" name="description">{$adboard.description}</textarea></td>
+    </tr>
+    <tr>
+		<th>状态 :</th>
+		<td><select name="status">
+        	<option value="0" <if condition="$adboard.status eq '0'">selected="selected"</if>>关闭</option>
+            <option value="1" <if condition="$adboard.status eq '1'">selected="selected"</if>>开启</option>
+        </select></td>
+    </tr>
+</table>
+<input type="hidden" name="id" id="id" value="{$adboard.id}" />
+<input type="submit" name="dosubmit" id="dosubmit" class="dialog" value=" ">
+</form>
+<script type="text/javascript">
+	$(function(){
+		$.formValidator.initConfig({formid:"myform",autotip:true,onerror:function(msg,obj){window.top.art.dialog({content:msg,lock:true,width:'250',height:'50'}, function(){this.close();$(obj).focus();})}});
+		
+		$("#name").formValidator({onshow:"不能为空",onfocus:"不能为空"}).inputValidator({min:1,onerror:"请填写广告名称"});
+	})
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<form name="searchform" action="{:u(MODULE_NAME.'/'.ACTION_NAME)}" method="post" >
+<table width="100%" cellspacing="0" class="search-form">
+    <tbody>
+        <tr>
+        <td>
+        <div class="explain-col">
+            关键字:
+            <input name="keyword" type="text" class="input-text" size="25" value="{$keyword}" />
+            <volist name="select_list" id="val">
+            	<select name="{$val.name}" id="{$val.name}">
+                	<volist name="val['items']" id="sval">
+                    <option value="{$sval.id}">{$sval.title}</option>
+                    </volist>
+                </select>	
+            </volist>            
+            <input type="submit" name="search" class="button" value="搜索" />
+        </div>
+        </td>
+        </tr>
+    </tbody>
+</table>
+</form>
+<script type="text/javascript">
+$(function(){ 
+	<volist name="select_list" id="val">		   
+	$('#{$val.name}').val(def.request.{$val.name});
+	</volist> 
+});
+</script>
