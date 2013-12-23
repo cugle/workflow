@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <script type="text/javascript" src="__ROOT__/statics/js/jquery/jquery-1.7.2.min.js"></script>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>瀑布流第一课</title>
+ <style type="text/css">
+    #maina {
+        width: 1100px;
+    }
+    #maina .pina{
+        width: 225px;
+        height: auto;
+        padding: 15px 0px 0px 15px;
+        float: left;
+    }
+    #maina .pina .box{
+        width: 205px;
+        height: auto;
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 6px #ccc;
+        border-radius: 5px;
+    }
+    #maina .pina .box img{
+        width: 205px;
+    }
+ #container .item {
+	width: 231px;
+}
+ </style>
+ <script type="text/javascript" src="__ROOT__/statics/js/waterfall.js"></script>
+ <script type="text/javascript">
+window.onload = function(){
+    waterfallinit({
+        parent:'maina',
+        pin:'pina',
+        successFn:success,
+        loadImgSrc:'__ROOT__/statics/images/loading-footer.gif',
+        endImgSrc:'__ROOT__/statics/images/end.png',
+        requestUrl:'index.php?m=Index&a=request',
+        requestNum:5,
+        style:2,
+        loadImgId:'loadImg',
+        endImgId:'endImg',
+    })
+    function success(data){
+        var oParent = document.getElementById('maina'); //获取父节点
+		if(data!=false){
+        for(i in data){
+                var oPin = document.createElement('div');
+                oPin.className = 'pina';
+                oParent.appendChild(oPin);
+                var oBox = document.createElement('div');
+                oBox.className = 'box';
+                oPin.appendChild(oBox);
+                var oImg = document.createElement('img');
+                oImg.src = '__ROOT__/data/news/'+data[i].img;
+                oBox.appendChild(oImg);
+        }
+		}
+        return true;
+    }
+ }
+ </script>
+ 
+ 
+ 
+ </head>
+ <body>
+ <div id="maina">
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+<div class="pina"><div class="box"><img src="/tp/data/news/52a80c5acdfe6.jpg"></div></div>
+
+ </div>
+
+ 
+ 
+
+ </body>
+ </html>
