@@ -1,0 +1,453 @@
+[ 2013-12-26T10:19:15+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 40 行.
+
+[ 2013-12-26T10:19:32+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-26T10:52:42+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.078125s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.078125s ]
+
+[ 2013-12-26T10:52:42+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-26T10:52:43+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-26T10:52:48+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-26T10:57:49+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+ERR: Action:formatedata您所请求的方法不存在！
+
+[ 2013-12-26T10:59:15+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-26T11:02:43+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-26T11:09:04+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-26T11:09:42+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-26T11:09:48+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: resdata D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 189 行.
+
+[ 2013-12-26T11:37:20+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2013-12-26T11:37:41+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.046875s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.046875s ]
+
+[ 2013-12-26T11:37:55+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: resdata D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 63 行.
+
+[ 2013-12-26T17:34:21+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.062500s ]
+
+[ 2013-12-26T17:34:46+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2013-12-26T17:35:04+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.015625s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 101 行.
+
+[ 2013-12-26T17:35:22+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 113 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 115 行.
+NOTIC: [8] Undefined index: Event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 57 行.
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 232 行.
+
+[ 2013-12-26T17:35:40+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 116 行.
+NOTIC: [8] Undefined index: Event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 57 行.
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 233 行.
+
+[ 2013-12-26T17:35:41+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 116 行.
+NOTIC: [8] Undefined index: Event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 57 行.
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 233 行.
+
+[ 2013-12-26T17:35:41+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 116 行.
+NOTIC: [8] Undefined index: Event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 57 行.
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 233 行.
+
+[ 2013-12-26T17:35:49+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 115 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: Event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 58 行.
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 234 行.
+
+[ 2013-12-26T17:35:58+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 115 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: Event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 58 行.
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 234 行.
+
+[ 2013-12-26T17:36:09+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 115 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: Event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: Event D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 58 行.
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 234 行.
+
+[ 2013-12-26T17:38:00+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2013-12-26T17:38:40+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: stdClass::$nickname D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 91 行.
+NOTIC: [8] Undefined property: stdClass::$sex D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 92 行.
+NOTIC: [8] Undefined property: stdClass::$subscribe_time D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 93 行.
+NOTIC: [8] Undefined property: stdClass::$subscribe_time D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 96 行.
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES (null,null,null,'140.206.160.191','140.206.160.191',null,'1') [ RunTime:0.015625s ]
+ERR: 1048:Column 'name' cannot be null
+ [ SQL语句 ] : INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES (null,null,null,'140.206.160.191','140.206.160.191',null,'1')
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 234 行.
+
+[ 2013-12-26T17:39:40+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.015625s ]
+NOTIC: [8] Undefined property: stdClass::$nickname D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 91 行.
+NOTIC: [8] Undefined property: stdClass::$sex D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 92 行.
+NOTIC: [8] Undefined property: stdClass::$subscribe_time D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 93 行.
+NOTIC: [8] Undefined property: stdClass::$subscribe_time D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 96 行.
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES (null,null,null,'140.206.160.191','140.206.160.191',null,'1') [ RunTime:0.000000s ]
+ERR: 1048:Column 'name' cannot be null
+ [ SQL语句 ] : INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES (null,null,null,'140.206.160.191','140.206.160.191',null,'1')
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 234 行.
+
+[ 2013-12-26T17:40:04+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.015625s ]
+NOTIC: [8] Undefined property: stdClass::$nickname D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 92 行.
+NOTIC: [8] Undefined property: stdClass::$sex D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 93 行.
+NOTIC: [8] Undefined property: stdClass::$subscribe_time D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 94 行.
+NOTIC: [8] Undefined property: stdClass::$subscribe_time D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 97 行.
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES (null,null,null,'140.206.160.191','140.206.160.191',null,'1') [ RunTime:0.000000s ]
+ERR: 1048:Column 'name' cannot be null
+ [ SQL语句 ] : INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES (null,null,null,'140.206.160.191','140.206.160.191',null,'1')
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 235 行.
+
+[ 2013-12-26T17:40:39+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.046875s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 235 行.
+
+[ 2013-12-26T17:40:51+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.015625s ]
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 235 行.
+
+[ 2013-12-26T17:41:19+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.046875s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 236 行.
+
+[ 2013-12-26T17:41:46+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 86 行.
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.046875s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 236 行.
+
+[ 2013-12-26T17:42:12+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.015625s ]
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 236 行.
+
+[ 2013-12-26T17:42:54+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.015625s ]
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.046875s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 236 行.
+
+[ 2013-12-26T17:43:14+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.046875s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 237 行.
+
+[ 2013-12-26T17:47:57+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name=杨永富 ) LIMIT 1   [ RunTime:0.015625s ]
+ERR: 1054:Unknown column '杨永富' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name=杨永富 ) LIMIT 1  
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.062500s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 240 行.
+
+[ 2013-12-26T17:48:14+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name=杨永富 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '杨永富' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name=杨永富 ) LIMIT 1  
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.031250s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 241 行.
+
+[ 2013-12-26T17:49:15+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.031250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name=杨永富 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '杨永富' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name=杨永富 ) LIMIT 1  
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.046875s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 241 行.
+
+[ 2013-12-26T17:49:28+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name=杨永富 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '杨永富' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name=杨永富 ) LIMIT 1  
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.046875s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 243 行.
+
+[ 2013-12-26T17:49:50+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name="杨永富" ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 243 行.
+
+[ 2013-12-26T17:50:10+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name="杨永富" ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 243 行.
+
+[ 2013-12-26T17:50:28+08:00 ] 127.0.0.1 /wxtp/tp/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: SwitchMobileTpl Behavior ::run [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkphp_user` [ RunTime:0.046875s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkphp_user` WHERE ( name="杨永富" ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: INSERT INTO `thinkphp_user` (`name`,`sex`,`add_time`,`ip`,`last_ip`,`last_time`,`status`) VALUES ('杨永富',1,1388045482,'140.206.160.191','140.206.160.191',1388045482,'1') [ RunTime:0.031250s ]
+NOTIC: [8] Undefined variable: resultStr D:\xampp\htdocs\wxtp\tp\app\Lib\Action\IndexAction.class.php 第 243 行.
+
